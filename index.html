@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="home">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h1>Chahat Kalsi</h1>
+            <p>MSCS student at Stony Brook University, NY</p>
+            <!-- Social media buttons -->
+            <div class="social-buttons">
+                <a href="mailto:chahat.kalsi@stonybrook.edu" class="btn btn-primary"><i class="fas fa-envelope"></i> Email</a>
+                <a href="static/RESUME-Chahat_Kalsi.pdf" class="btn btn-primary"><i class="fas fa-file-alt"></i> Resume</a>
+                <a href="https://github.com/Chahat08" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/chahat-kalsi" class="btn btn-primary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#home">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello, World!</p>
+            <p>I'm Chahat Kalsi. I'm a first year Masters in Computer Science student at Stony Brook University, NY, US.</p>
+            <p>Current interests:</p>
+            <ul>
+                <li><b>Computer Graphics:</b> Virtual reality with large-scale immersive systems, improving the ease of user interactivity in VR worlds, synchronisation and optimisation of data across nodes in large immersive systems, and conformal mappings.</li>
+                <li><b>Computer Vision:</b> Vision transformers, and, further applications of transformer based architectures in computer vision.</li>
+                <li><b>Network Security:</b> Network traffic analysis using tcpdump and Wireshark, and using scapy for custom traffic sniffing and alerting.</li>
+                <li><b>Data Visualisation:</b> Understanding the various techniques of data visualisation and building full stack visualization dashboards using D3.js and Flask.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-dark text-white">
+                        <img src="static/dashboard.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">D3 Dashboard</h5>
+                            <p class="card-text">D3.js Dashboard with a flask backend for creating visualizations useful for dimensionality reduction tasks using the PIMA Indians Diabetes Dataset. Deployed on an AWS EC2 instance.</p>
+                            <!-- Links for GitHub and Demo -->
+                            <div class="d-flex justify-content-between">
+                                <a href="https://github.com/Chahat08/D3-DASHBOARD?tab=readme-ov-file" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="http://18.119.235.50:8080/" class="btn btn-success">Demo</a>
+                            </div>
+                            <br>
+                            <!-- Learn more link -->
+                            <a href="#" class="card-link text-white">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-dark text-white">
+                        <img src="static/pokeviz.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">PokeViz Dashboard</h5>
+                            <p class="card-text">Node application with a D3.js frontend for visualization of various Pokemon statistics. Deployed on an AWS EC2 instance.</p>
+                            <!-- Links for GitHub and Demo -->
+                            <div class="d-flex justify-content-between">
+                                <a href="https://github.com/Chahat08/vis-lab-1/tree/master" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="http://18.119.235.50:5000/" class="btn btn-success">Demo</a>
+                            </div>
+                            <br>
+                            <!-- Learn more link -->
+                            <a href="#" class="card-link text-white">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-dark text-white">
+                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Description of Project 1.</p>
+                            <!-- Links for GitHub and Demo -->
+                            <div class="d-flex justify-content-between">
+                                <a href="https://github.com/yourusername/project1" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://demo.project1.com" class="btn btn-success">Demo</a>
+                            </div>
+                            <br>
+                            <!-- Learn more link -->
+                            <a href="#" class="card-link text-white">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-dark text-white">
+                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Description of Project 1.</p>
+                            <!-- Links for GitHub and Demo -->
+                            <div class="d-flex justify-content-between">
+                                <a href="https://github.com/yourusername/project1" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://demo.project1.com" class="btn btn-success">Demo</a>
+                            </div>
+                            <br>
+                            <!-- Learn more link -->
+                            <a href="#" class="card-link text-white">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-dark text-white">
+                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Description of Project 1.</p>
+                            <!-- Links for GitHub and Demo -->
+                            <div class="d-flex justify-content-between">
+                                <a href="https://github.com/yourusername/project1" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://demo.project1.com" class="btn btn-success">Demo</a>
+                            </div>
+                            <br>
+                            <!-- Learn more link -->
+                            <a href="#" class="card-link text-white">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Experience -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <!-- Work Experience 1 -->
+            <div class="card bg-dark text-white mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Job Title 1</h5>
+                    <h6 class="card-subtitle mb-2">Company Name 1</h6>
+                    <p class="card-text">Description of work experience 1.</p>
+                    <p class="card-text">Date Range</p>
+                </div>
+            </div>
+            <!-- Work Experience 2 -->
+            <div class="card bg-dark text-white mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Job Title 2</h5>
+                    <h6 class="card-subtitle mb-2">Company Name 2</h6>
+                    <p class="card-text">Description of work experience 2.</p>
+                    <p class="card-text">Date Range</p>
+                </div>
+            </div>
+            <!-- Work Experience 3 -->
+            <div class="card bg-dark text-white mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Job Title 3</h5>
+                    <h6 class="card-subtitle mb-2">Company Name 3</h6>
+                    <p class="card-text">Description of work experience 3.</p>
+                    <p class="card-text">Date Range</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Include your contact information here.</p>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
