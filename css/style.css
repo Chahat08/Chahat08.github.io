@@ -2,7 +2,7 @@
 .header {
     position: relative;
     height: 100vh;
-    background-image: url('../static/img/misc/silo.png'); /* Change the URL to your desired background image */
+    /* Change the URL to your desired background image */
     background-size: cover;
     background-position: center;
     display: flex;
