@@ -440,16 +440,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-my-collegues-and-i-submitted-a-paper-on-silo-half-gigapixel-cylindrical-stereoscopic-immersive-display-to-ieee-vr-2025",
+          title: 'My collegues and I submitted a paper on Silo: Half-Gigapixel Cylindrical Stereoscopic Immersive...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-my-collegues-and-i-submitted-a-paper-on-using-handheld-devices-to-display-auxilliary-information-for-large-wall-displays-to-ieee-ismar-2025",
+          title: 'My collegues and I submitted a paper on using handheld devices to display...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
