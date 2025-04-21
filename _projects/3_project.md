@@ -1,11 +1,11 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
+title: Conformal Mapping
+description: For Large Scale Display Facilities
 img: assets/img/7.jpg
 redirect: https://unsplash.com
-importance: 3
-category: work
+importance: 1
+category: research
 ---
 
 Every project has a beautiful feature showcase page.

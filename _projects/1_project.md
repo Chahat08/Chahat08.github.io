@@ -4,11 +4,11 @@ title: Multi-channel Volume Rendering
 description: For Large Wall Displays
 img: assets/img/MultiChannel_Volume_Rendering_1.jpg
 importance: 1
-category: work
-related_publications: false
+category: research
+related_publications: true
 ---
 
-Large wall displays (LWDs) can achieve resolutions that are traditionally unattainable with standard desktop setups. Stereoscopic facilities offering gigapixel resolutions have also been developed, pushing these limits even further {% cite 10937398 %}. Moreover, the large spatial dimensions and extensive screen real estate of such facilities have been shown to enhance human perception and cognition {% cite 10.1145/1753326.1753336 %}.
+Large wall displays (LWDs) can achieve resolutions that are traditionally unattainable with standard desktop setups. Stereoscopic facilities offering gigapixel resolutions have also been developed, pushing these limits even further {% cite 10937398 %}. Moreover, the large spatial dimensions and extensive screen real estate of such facilities have been shown to enhance human perception and cognition.
 
 Therefore, it is essential to explore the potential of these facilities in advancing scientific and medical analyses. This project aims to address that objective. By implementing volumetric rendering techniques tailored specifically for LWDs - considering their display configurations, multi-node distributed architectures, and unique interactivity requirements - this work seeks to evaluate their usability for scientific volumetric analysis.
 
@@ -21,7 +21,7 @@ Therefore, it is essential to explore the potential of these facilities in advan
     </div>
 </div>
 <div class="caption">
-    Volume renderings of proteins captured using electron microscopy, displayed on the LWD facility FlexiCAVE.
+    Volume renderings of proteins captured using electron microscopy, displayed on the LWD facility FlexiCAVE {% cite FlexiCAVETemp %}.
 </div>
 
 To enable interactive exploration of the volume, we have designed a novel web based frontend, which allows all of exploration, slicing and transfer function editing.

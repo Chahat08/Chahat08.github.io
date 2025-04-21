@@ -4,7 +4,7 @@ title: Radial Volumetric Slicing
 description: Physical Interaction to Virtual Transformation
 img: assets/img/3.jpg
 importance: 1
-category: work
+category: research
 giscus_comments: true
 ---
 

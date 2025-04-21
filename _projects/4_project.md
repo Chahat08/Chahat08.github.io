@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 4
-description: another without an image
+title: Handheld Devices for Augmented Reality
+description: In Large Scale Display Facilities
 img:
-importance: 3
-category: fun
+importance: 1
+category: research
 ---
 
 Every project has a beautiful feature showcase page.
