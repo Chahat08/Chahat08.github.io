@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper Silo: Half-Gigapixel Cylindrical Stereoscopic Immersive Display to got accepted into IEEE VR, 2025.
+Our paper Silo: Half-Gigapixel Cylindrical Stereoscopic Immersive Display got accepted into IEEE VR, 2025.
