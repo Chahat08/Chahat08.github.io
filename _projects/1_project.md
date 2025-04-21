@@ -10,7 +10,7 @@ related_publications: false
 
 Large wall displays (LWDs) can achieve resolutions that are traditionally unattainable with standard desktop setups. Stereoscopic facilities offering gigapixel resolutions have also been developed, pushing these limits even further {% cite 10937398 %}. Moreover, the large spatial dimensions and extensive screen real estate of such facilities have been shown to enhance human perception and cognition {% cite 10.1145/1753326.1753336 %}.
 
-Therefore, it is essential to explore the potential of these facilities in advancing scientific and medical analyses. This project aims to address that objective. By implementing volumetric rendering techniques tailored specifically for LWDs—considering their display configurations, multi-node distributed architectures, and unique interactivity requirements—this work seeks to evaluate their usability for scientific volumetric analysis.
+Therefore, it is essential to explore the potential of these facilities in advancing scientific and medical analyses. This project aims to address that objective. By implementing volumetric rendering techniques tailored specifically for LWDs - considering their display configurations, multi-node distributed architectures, and unique interactivity requirements - this work seeks to evaluate their usability for scientific volumetric analysis.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 mt-3 mt-md-0">
