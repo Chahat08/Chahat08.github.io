@@ -64,14 +64,14 @@ ninja.data = [{
           description: "Physical Interaction to Virtual Transformation",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project.html";
-            },},{id: "projects-conformal-mapping",
-          title: 'Conformal Mapping',
-          description: "For Large Scale Display Facilities",
+            },},{id: "projects-using-handheld-devices-for-augmented-reality",
+          title: 'Using Handheld Devices for Augmented Reality',
+          description: "An Augmented Reality System for LWD Facilities",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project.html";
-            },},{id: "projects-handheld-devices-for-augmented-reality",
-          title: 'Handheld Devices for Augmented Reality',
-          description: "In Large Scale Display Facilities",
+            },},{id: "projects-conformal-retargetting-for-lwds",
+          title: 'Conformal Retargetting for LWDs',
+          description: "Recovering Information for Missing Display Surfaces in LWD Facilities",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project.html";
             },},{id: "projects-project-5",
