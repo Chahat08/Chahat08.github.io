@@ -13,7 +13,7 @@ In Human-Computer Interaction, a fundamental concept is designing interactivity 
 
 The latest immersive facility at Stony Brook University, the FlexiCAVE {% cite FlexiCAVETemp %}, features dynamic columns with hinges that afford physical rotation. Leveraging this capability, we developed the concept of **PIVoT: Physical Interaction to Virtual Transformation**.
 
-A novel use case of the PIVoT paradigm is radial slicing of volumetric datasets. By physically rotating the columns of the FlexiCAVE, users can dynamically slice through volumes along planes corresponding to the facility’s physical configuration. This approach allows detailed internal analysis of scientific volumetric datasets.
+A novel use case of the PIVoT paradigm is radial slicing of volumetric datasets. By physically rotating the columns of the FlexiCAVE, users can dynamically slice through volumes along planes corresponding to the facility's physical configuration. This approach allows detailed internal analysis of scientific volumetric datasets.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
