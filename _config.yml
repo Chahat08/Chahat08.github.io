@@ -7,9 +7,9 @@ first_name: Chahat
 middle_name: 
 last_name: Kalsi
 contact_note: >
-  Feel free to shoot me a mail, or reach out at any of my socials!
+  I'm open to collaboration, or to discuss any of my work. Please feel free to shoot me a mail!
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  My academic portfolio.
+  Personal website.
 # footer_text: >
 #   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 #   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -265,8 +265,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Kalsi]
+  first_name: [Chahat, C.]
 
   style: apa
   locale: en

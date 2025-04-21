@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: MSCS at <a href='https://www.stonybrook.edu/'>Stony Brook University</a>.
+subtitle: Visualization | Computer Graphics | AR/VR | Human-Computer Interaction 
 
 profile:
   align: right
