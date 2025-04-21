@@ -1,80 +1,69 @@
 ---
 layout: page
-title: Handheld Devices for Augmented Reality
-description: In Large Scale Display Facilities
-img:
+title: Conformal Retargetting for LWDs
+description: Recovering Information for Missing Display Surfaces in LWD Facilities
+img: assets/img/Conformal_Mapping_Background.img
 importance: 1
 category: research
+related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Immersive facilities, while having their many advantages, also face a key challenge: the absence of certain display surfaces - such as floors, ceilings or entrances - which leads to incomplete information coverage and impaired navigation. 
+We faced this issue when we were working on our LWD facility Silo {% cite SiloIEEEVR %}, it is a cylindrical facility with 21 columns, however there is a gap between them for a door, and it also lacks displays on the floor and the ceiling.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Conformal mapping using techniques such as Ricci Flow is one way to go about recovering this missing information. These angle-preserving mappings can be used to map a near complete shape (such as a capsule) to a flat texture, which can be applied to a shape with missing areas, such as the cylindrical Silo.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Conformal_Mapping_RF_Capsule.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Conformal_Mapping_RF_Map.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Angle-preserving conformal mapping of a capsule.
 </div>
+
+While conformal mapping can recover missing regions, the results that it produces might look visually distorted. To correct them, we can apply area-preserving optimal transport (OT) to these mappings.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Conformal_Mapping_OT_Capsule.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/Conformal_Mapping_OT_Map.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Area-preserving OT mapping of a capsule.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+We can use raytracing to finally generate the texture for a conformal map in a scene.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+<div class="row">
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Conformal_Mapping_RayTracing.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/Conformal_Mapping_CM_OT_Comparison.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Left, using raytracing to generate a cubemap texture. Right, comparison of textures obtained from (a) Conformal Mapping, and (b) Optimal Transport.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+Finally, these textures can be applied to immersive facilities, such as the Silo {% cite SiloIEEEVR %} to obtain information that was previously hidden.
 
-{% raw %}
-
-```html
 <div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/Conformal_Mapping_Silo_Results_.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/Conformal_Mapping_Polyp.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
-```
-
-{% endraw %}
+<div class="caption">
+    Left, we have mapping results in the Silo for (a) VC and (b) protein-folding structure. Insets show the full texture and the missing information recovered by the mapping highlighted in green. Right, Our mapping reveals a polyp in virtual colonoscopy which was otherwise hidden in the \textit{floor} of the Silo. (a) VC scene mapped on the Silo using our conformal+OT method. The green region highlights recovered information. (b) VC scene without mapping.
+</div>
