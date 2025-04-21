@@ -2,7 +2,7 @@
 layout: page
 title: Multi-channel Volume Rendering
 description: For Large Wall Displays
-img: MultiChannel_Volume_Rendering_1.jpg
+img: assets/img/MultiChannel_Volume_Rendering_1.jpg
 importance: 1
 category: work
 related_publications: false
@@ -26,9 +26,6 @@ Therefore, it is essential to explore the potential of these facilities in advan
 
 To enable interactive exploration of the volume, we have designed a novel web based frontend, which allows all of exploration, slicing and transfer function editing.
 
-{% raw %}
-
-```html
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/MultiChannel_Volume_Rendering_3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
@@ -40,6 +37,4 @@ To enable interactive exploration of the volume, we have designed a novel web ba
 <div class="caption">
     Using the frontend on a handheld device within the LWD facility Silo.
 </div>
-```
 
-{% endraw %}
