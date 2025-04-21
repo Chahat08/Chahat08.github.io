@@ -8,11 +8,9 @@ category: research
 related_publications: true
 ---
 
-Immersive facilities, while having their many advantages, also face a key challenge: the absence of certain display surfaces - such as floors, ceilings or entrances - which leads to incomplete information coverage and impaired navigation. 
-We faced this issue when we were working on our LWD facility Silo {% cite SiloIEEEVR %}, it is a cylindrical facility with 21 columns, however there is a gap between them for a door, and it also lacks displays on the floor and the ceiling.
+Immersive facilities, despite their numerous advantages, face a significant challenge: the absence of certain display surfaces-such as floors, ceilings, or entrances-which leads to incomplete visual coverage and impaired navigation. We encountered this issue while working on our Large Wall Display (LWD) facility, Silo {% cite SiloIEEEVR %}. Silo is a cylindrical facility composed of 21 columns; however, it includes a gap for an entrance and lacks display surfaces on both the floor and ceiling.
 
-Conformal mapping using techniques such as Ricci Flow is one way to go about recovering this missing information. These angle-preserving mappings can be used to map a near complete shape (such as a capsule) to a flat texture, which can be applied to a shape with missing areas, such as the cylindrical Silo.
-
+Conformal mapping techniques, such as Ricci Flow, offer a solution for recovering this missing information. These angle-preserving mappings allow us to transform a nearly complete 3D shape (such as a capsule) onto a flat texture, which can then be applied to facilities with missing display areas, like the cylindrical Silo.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -26,7 +24,7 @@ Conformal mapping using techniques such as Ricci Flow is one way to go about rec
     Angle-preserving conformal mapping of a capsule.
 </div>
 
-While conformal mapping can recover missing regions, the results that it produces might look visually distorted. To correct them, we can apply area-preserving optimal transport (OT) to these mappings.
+However, while conformal mappings can recover missing regions, they can also introduce visual distortions. To address this, we can apply area-preserving Optimal Transport (OT) techniques to correct these distortions.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -40,7 +38,7 @@ While conformal mapping can recover missing regions, the results that it produce
     Area-preserving OT mapping of a capsule.
 </div>
 
-We can use raytracing to finally generate the texture for a conformal map in a scene.
+Ray tracing can then be used to generate textures based on these corrected conformal mappings. 
 
 <div class="row">
     <div class="col-sm-4 mt-3 mt-md-0">
@@ -54,7 +52,7 @@ We can use raytracing to finally generate the texture for a conformal map in a s
     Left, using raytracing to generate a cubemap texture. Right, comparison of textures obtained from (a) Conformal Mapping, and (b) Optimal Transport.
 </div>
 
-Finally, these textures can be applied to immersive facilities, such as the Silo {% cite SiloIEEEVR %} to obtain information that was previously hidden.
+Finally, applying these textures to immersive facilities, such as the Silo {% cite SiloIEEEVR %}, allows us to visualize previously hidden information.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
