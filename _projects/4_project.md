@@ -2,7 +2,7 @@
 layout: page
 title: Conformal Retargetting for LWDs
 description: Recovering Information for Missing Display Surfaces in LWD Facilities
-img: assets/img/Conformal_Mapping_Background.img
+img: assets/img/Conformal_Mapping_Background.png
 importance: 1
 category: research
 related_publications: true
@@ -14,10 +14,10 @@ Conformal mapping techniques, such as Ricci Flow, offer a solution for recoverin
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Conformal_Mapping_RF_Capsule.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Conformal_Mapping_RF_Capsule.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Conformal_Mapping_RF_Map.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Conformal_Mapping_RF_Map.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -28,10 +28,10 @@ However, while conformal mappings can recover missing regions, they can also int
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Conformal_Mapping_OT_Capsule.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Conformal_Mapping_OT_Capsule.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Conformal_Mapping_OT_Map.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Conformal_Mapping_OT_Map.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -42,7 +42,7 @@ Ray tracing can then be used to generate textures based on these corrected confo
 
 <div class="row">
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Conformal_Mapping_RayTracing.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Conformal_Mapping_RayTracing.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/Conformal_Mapping_CM_OT_Comparison.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
@@ -56,7 +56,7 @@ Finally, applying these textures to immersive facilities, such as the Silo {% ci
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/Conformal_Mapping_Silo_Results_.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/Conformal_Mapping_Silo_Results.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/Conformal_Mapping_Polyp.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
