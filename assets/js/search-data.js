@@ -64,14 +64,14 @@ ninja.data = [{
           description: "Physical Interaction to Virtual Transformation",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project.html";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-conformal-mapping",
+          title: 'Conformal Mapping',
+          description: "For Large Scale Display Facilities",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project.html";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+            },},{id: "projects-handheld-devices-for-augmented-reality",
+          title: 'Handheld Devices for Augmented Reality',
+          description: "In Large Scale Display Facilities",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project.html";
             },},{id: "projects-project-5",
