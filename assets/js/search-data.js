@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "Some of my ongoing and past projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -54,14 +54,14 @@ ninja.data = [{
           section: "News",},{id: "news-my-collegues-and-i-submitted-a-paper-on-using-handheld-devices-to-display-auxilliary-information-for-large-wall-displays-to-ieee-ismar-2025",
           title: 'My collegues and I submitted a paper on using handheld devices to display...',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-multi-channel-volume-rendering",
+          title: 'Multi-channel Volume Rendering',
+          description: "For Large Wall Displays",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project.html";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-radial-volumetric-slicing",
+          title: 'Radial Volumetric Slicing',
+          description: "Physical Interaction to Virtual Transformation",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project.html";
             },},{id: "projects-project-3-with-very-long-name",
