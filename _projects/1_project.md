@@ -12,7 +12,6 @@ Large wall displays (LWDs) can achieve resolutions that are traditionally unatta
 
 Therefore, it is essential to explore the potential of these facilities in advancing scientific and medical analyses. This project aims to address that objective. By implementing volumetric rendering techniques tailored specifically for LWDs—considering their display configurations, multi-node distributed architectures, and unique interactivity requirements—this work seeks to evaluate their usability for scientific volumetric analysis.
 
-
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/MultiChannel_Volume_Rendering_1.jpg" title="EM Volume Rendering 1" class="img-fluid rounded z-depth-1" %}
