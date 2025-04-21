@@ -63,5 +63,5 @@ Finally, applying these textures to immersive facilities, such as the Silo {% ci
     </div>
 </div>
 <div class="caption">
-    Left, we have mapping results in the Silo for (a) VC and (b) protein-folding structure. Insets show the full texture and the missing information recovered by the mapping highlighted in green. Right, Our mapping reveals a polyp in virtual colonoscopy which was otherwise hidden in the \textit{floor} of the Silo. (a) VC scene mapped on the Silo using our conformal+OT method. The green region highlights recovered information. (b) VC scene without mapping.
+    Left, we have mapping results in the Silo for (a) VC and (b) protein-folding structure. Insets show the full texture and the missing information recovered by the mapping highlighted in green. Right, Our mapping reveals a polyp in virtual colonoscopy which was otherwise hidden in the floor of the Silo. (a) VC scene mapped on the Silo using our conformal+OT method. The green region highlights recovered information. (b) VC scene without mapping.
 </div>
