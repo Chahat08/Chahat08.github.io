@@ -6,4 +6,4 @@ related_posts: false
 ---
 
 
-Our submission "BioSET" to the [Bio+MedVis Challenge](http://biovis.net/2025/biovisChallenges_vis/) got accepted!
+My collegues and I submitted to the [Bio+MedVis Challenge](http://biovis.net/2025/biovisChallenges_vis/) at IEEE VIS 2025!
