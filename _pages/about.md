@@ -25,11 +25,6 @@ latest_posts:
   enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
-
-OLD:
-I did my MS student in Computer Science at [Stony Brook University (SBU)](https://www.stonybrook.edu/), research assistant at the [Center for Wireless and Information Technology (CEWIT)](https://www.cewit.org/), and a member of the [Center for Visual Computing (CVC)](https://cvc.cs.stonybrook.edu/). I received my BE in Computer Science and Engineering from [Panjab University, India](https://puchd.ac.in/) in 2023. 
-
-Advised by [Arie Kaufman](https://www3.cs.stonybrook.edu/~ari/) at SBU, my research primarily focuses on visualization techniques for Large Wall Displays (LWDs), such as [Silo](https://vislab.cs.stonybrook.edu/facilities), [FlexiCAVE](), and, [Reality Deck](https://vislab.cs.stonybrook.edu/facilities). At CEWIT, my research has primarily centered on UAV image segmentation.  My interests include biomedical and information visualization, immersive and situated visualization techniques, and interactions in AR/VR.
 ---
 
 Hello, World!
@@ -37,3 +32,10 @@ Hello, World!
 I am pursuing a PhD in Computer Science at [New York University (NYU)](https://engineering.nyu.edu/academics/departments/computer-science-and-engineering)'s [VIDA](https://vida.engineering.nyu.edu/) Center, where, advised by [Robert Krueger](https://kruegert.github.io/) and [Qi Sun](https://www.immersivecomputinglab.org/), I am currently researching visualization and visual analytics for 3D microscopy volumes.
 
 I did my MS in Computer Science at [Stony Brook University (SBU)](https://www.stonybrook.edu/), where, advised by [Arie Kaufman](https://www3.cs.stonybrook.edu/~ari/), my research primarily focused on visualization techniques for Large Wall Displays (LWDs), such as [Silo](https://vislab.cs.stonybrook.edu/facilities), [FlexiCAVE](), and, [Reality Deck](https://vislab.cs.stonybrook.edu/facilities). 
+
+
+<!--
+I did my MS student in Computer Science at [Stony Brook University (SBU)](https://www.stonybrook.edu/), research assistant at the [Center for Wireless and Information Technology (CEWIT)](https://www.cewit.org/), and a member of the [Center for Visual Computing (CVC)](https://cvc.cs.stonybrook.edu/). I received my BE in Computer Science and Engineering from [Panjab University, India](https://puchd.ac.in/) in 2023.
+
+Advised by [Arie Kaufman](https://www3.cs.stonybrook.edu/~ari/) at SBU, my research primarily focuses on visualization techniques for Large Wall Displays (LWDs), such as [Silo](https://vislab.cs.stonybrook.edu/facilities), [FlexiCAVE](), and [Reality Deck](https://vislab.cs.stonybrook.edu/facilities). At CEWIT, my research has primarily centered on UAV image segmentation. My interests include biomedical and information visualization, immersive and situated visualization techniques, and interactions in AR/VR.
+-->
