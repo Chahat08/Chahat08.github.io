@@ -7,28 +7,17 @@
   <title>Chahat Kalsi</title>
   <meta name="description" content="Personal academic website: research, publications, awards, teaching, and artworks.">
   <style>
-    /* ------- Simple, classic, no-JS styles ------- */
     :root {
       --page-bg: #fffdf7;
-      /* warm paper */
       --ink: #111111;
-      /* near-black text */
       --muted: #555555;
-      /* muted text */
       --rule: #d9d1c4;
-      /* thin rules */
       --link: #0645ad;
-      /* classic link blue */
       --link-visited: #0b0080;
-      /* classic visited */
       --link-hover: #3366bb;
-      /* hover */
       --accent: #b66a2c;
-      /* small accent */
       --maxw: 48rem;
-      /* ~768px */
       --photo-col: 260px;
-      /* width of portrait column */
     }
 
     html {
@@ -182,14 +171,14 @@
 
     .pub-item {
       display: grid;
-      grid-template-columns: 84px 1fr;
+      grid-template-columns: 150px 1fr;
       gap: .75rem;
       align-items: center;
     }
 
     .pub-thumb {
-      width: 84px;
-      height: 64px;
+      width: 150px;
+      height: 120px;
       object-fit: cover;
       border: 1px solid var(--rule);
     }
@@ -250,7 +239,6 @@
       bottom: 122%;
       border: 6px solid transparent;
       border-top-color: #111;
-      /* little caret */
       opacity: 0;
       transition: opacity .12s ease-in-out;
     }
@@ -357,14 +345,12 @@
       }
     }
 
-    /* footer */
     footer {
       margin: 2rem 0;
       font-size: .9rem;
       color: var(--muted);
     }
 
-    /* print-friendly */
     @media print {
       a {
         color: inherit;
@@ -375,9 +361,6 @@
         display: none
       }
     }
-
-
-    /* ====== Responsive overrides (append at end) ====== */
 
     /* Tablet and down (<= 860px): roomier layout */
     @media (max-width: 860px) {
@@ -397,22 +380,19 @@
     /* Phone and small tablets (<= 760px) */
     @media (max-width: 760px) {
 
-      /* About: stack portrait above text, make photo banner-like */
       .intro {
         grid-template-columns: 1fr;
       }
 
       .intro img {
         height: 220px !important;
-        /* consistent banner */
         width: 100% !important;
         object-fit: cover;
       }
 
-      /* Universities: single column, centered, compact logos */
+      /* Universities */
       .edu-inline {
         grid-template-columns: 1fr;
-        /* stack */
         gap: .5rem;
         justify-items: center;
         text-align: center;
@@ -420,13 +400,11 @@
 
       .edu-inline>figure {
         max-width: 22rem;
-        /* tidy width */
         width: 100%;
       }
 
       .edu-inline-logo {
         max-height: 40px;
-        /* smaller on mobile */
         padding: .15rem;
         margin: 0 auto;
       }
@@ -444,30 +422,27 @@
         margin: 0;
       }
 
-      /* Publications: thumbnail above text, centered; keep thumbs uniform */
+      /* Publications */
       .pub-item {
         grid-template-columns: 1fr;
-        /* stack image then meta */
-        justify-items: center;
+        justify-items: stretch;
         text-align: left;
-        /* keep text readable */
-        gap: .5rem;
+        gap: .6rem;
       }
 
       .pub-thumb {
-        width: 140px;
-        /* consistent size */
-        height: 100px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4/3;
         object-fit: cover;
-        /* vertical crop ok */
-        margin: .1rem auto 0 auto;
+        margin: 0;
         display: block;
       }
 
-      /* Gallery: switch to grid for clean wrapping; uniform image crop */
+      /* Gallery */
       .gallery {
         display: grid !important;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); 
         gap: .75rem;
       }
 
