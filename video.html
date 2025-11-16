@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paper Video · Chahat Kalsi</title>
+  <meta name="description" content="Paper video and PDF viewer for Chahat Kalsi.">
+  <style>
+    :root {
+      --page-bg: #fffdf7;
+      --ink: #111111;
+      --muted: #555555;
+      --rule: #d9d1c4;
+      --link: #0645ad;
+      --link-visited: #0b0080;
+      --link-hover: #3366bb;
+      --maxw: 48rem;
+    }
+
+    html {
+      background: var(--page-bg);
+      color: var(--ink);
+    }
+
+    body {
+      margin: 0;
+      font: 16px/1.6 Georgia, "Times New Roman", Times, serif;
+    }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    header {
+      margin: 1rem 0 0.5rem 0;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin: 0 0 .25rem 0;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin: 1.5rem 0 .5rem;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: .25rem;
+    }
+
+    p {
+      margin: .6rem 0;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: underline;
+      text-underline-offset: .12em;
+    }
+
+    a:visited {
+      color: var(--link-visited);
+    }
+
+    a:hover {
+      color: var(--link-hover);
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--rule);
+      margin: 1.25rem 0;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .video-shell {
+      margin: 1rem 0;
+    }
+
+    .video-frame-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #000;
+      border: 1px solid var(--rule);
+      overflow: hidden;
+    }
+
+    .video-frame-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .links {
+      margin-top: 1rem;
+    }
+
+    footer {
+      margin: 2rem 0 0 0;
+      font-size: .9rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 860px) {
+      .wrap { padding: 1.25rem; }
+      h1 { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="muted"><a href="index.html">Home</a></p>
+      <h1 id="paper-title">Paper title</h1>
+      <p class="muted" id="paper-subtitle">Video &amp; PDF</p>
+      <hr>
+    </header>
+
+    <main>
+      <section class="video-shell">
+        <h2>Video</h2>
+        <div class="video-frame-wrap">
+          <iframe
+            id="video-frame"
+            src=""
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            title="Paper video">
+          </iframe>
+        </div>
+      </section>
+
+      <section class="links">
+        <h2>Links</h2>
+        <p id="pdf-link-row">
+          <a id="pdf-link" href="#" target="_blank" rel="noopener">PDF</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <hr>
+      <p>© 2025 Chahat Kalsi · <a href="mailto:chahat.kalsi@nyu.edu">chahat.kalsi@nyu.edu</a></p>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const title = params.get("title") || "Paper video";
+      const video = params.get("video") || "";
+      const pdf   = params.get("pdf")   || "";
+      const authors = params.get("authors") || "";
+
+      const titleEl = document.getElementById("paper-title");
+      const subtitleEl = document.getElementById("paper-subtitle");
+      titleEl.textContent = title;
+      subtitleEl.textContent = authors;
+
+      const frame = document.getElementById("video-frame");
+      if (video) {
+        frame.src = video;
+      } else {
+        frame.replaceWith("No video URL provided.");
+      }
+
+      const pdfLink = document.getElementById("pdf-link");
+      const pdfRow = document.getElementById("pdf-link-row");
+      if (pdf) {
+        pdfLink.href = pdf;
+      } else {
+        pdfRow.textContent = "No PDF link provided.";
+      }
+
+      document.title = title;
+    })();
+  </script>
+</body>
+</html>
