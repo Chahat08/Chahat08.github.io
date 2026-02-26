@@ -18,7 +18,7 @@
       --link: #0645ad;
       --link-visited: #0b0080;
       --link-hover: #3366bb;
-      --accent: #b66a2c;
+      --accent: #111111;
       --maxw: 48rem;
       --photo-col: 260px;
     }
@@ -173,7 +173,7 @@
       width: 150px;
       height: 120px;
       object-fit: cover;
-      border: 1px solid var(--rule);
+      border: 3px solid var(--accent);
     }
 
     .pub-meta {
@@ -207,7 +207,7 @@
       width: 150px;
       height: 120px;
       object-fit: cover;
-      border: 1px solid var(--rule);
+      border: 3px solid var(--accent);
     }
 
     .posters-meta {
@@ -277,6 +277,23 @@
     .eq-mark:focus::after,
     .eq-mark:focus::before {
       opacity: 1;
+    }
+
+    /* inline badge */
+    .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.85em;
+      font-weight: 600;
+      padding: 0.18em 0.7em;
+      border-radius: 1em;
+      vertical-align: middle;
+      margin-left: 0.5em;
+      letter-spacing: 0.03em;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+      line-height: 1.2;
+      white-space: nowrap;
     }
 
     /* education */
@@ -537,6 +554,10 @@
 
 <body>
   <div class="wrap">
+    <h1>
+      Chahat Kalsi
+      <span class="badge">Award of Excellence</span>
+    </h1>
     <header>
       <h1>Chahat Kalsi</h1>
       <nav aria-label="Site">
@@ -630,13 +651,12 @@
             <div class="pub-item">
               <img class="pub-thumb" src="assets/papers/bioset/bioset.png" alt="Paper thumbnail">
               <div class="pub-meta">
-                <strong>BioSET: Biomarker-based Spatial co-Expression analysis in Tumor environments</strong>. </br>
+                <strong>BioSET: Biomarker-based Spatial co-Expression analysis in Tumor environments</strong>. <span class="badge">Award of Excellence</span> </br>
                 <u>Chahat Kalsi</u>, Yuancheng Shen<sup class="eq-mark"
                   data-tip="Second authors contributed equally.">†</sup>, Sophia Gaupp<sup class="eq-mark"
                   data-tip="Second authors contributed equally.">†</sup>, Luca Reichmann<sup class="eq-mark"
                   data-tip="Second authors contributed equally.">†</sup>, Meri Rogava, Michael Krone, Saeed Boorboor,
-                and Robert Krueger </br> <em>Bio+MedVis Challenge, IEEE Visualization and Visual Analytics (VIS)</em>, 2025. <strong>(Award
-                  of Excellence)</strong>
+                and Robert Krueger </br> <em>Bio+MedVis Challenge, IEEE Visualization and Visual Analytics (VIS)</em>, 2025.
                 <div class="pub-links">
                   <a href="http://biovis.net/2025/data/BioMedVisChallenge2025submissions/9592/final.pdf" target="_blank" rel="noopener"
                     type="application/pdf">PDF</a>
@@ -688,22 +708,6 @@
             </div>
           </li>
 
-          <li>
-            <div class="pub-item">
-              <img class="pub-thumb" src="assets/papers/immersive_volume_rendering/immersive_volume_rendering.png"
-                alt="Paper thumbnail">
-              <div class="pub-meta">
-                <strong>Interactivity for Immersive Volume Visualization</strong>. </br><u>Chahat Kalsi</u> </br>2024.
-                <div class="pub-links">
-                  <a href="assets/papers/immersive_volume_rendering/Immersive_Volume_Rendering.pdf" target="_blank"
-                    rel="noopener" type="application/pdf">PDF</a>
-                  <a href="https://github.com/Chahat08/VTK_Engine">Code</a>
-                  <a href="https://www.youtube.com/watch?v=GUYwrb5_kNE">Video</a>
-                </div>
-              </div>
-            </div>
-          </li>
-
         </ol>
       </section>
 
@@ -712,7 +716,23 @@
         <ol class="posters">
           <li>
             <div class="pub-item">
-              <img class="pub-thumb" src="assets/papers/bioset/bioset.png" alt="Paper thumbnail">
+              <img class="pub-thumb" src="assets/papers/stereo-cell/stereo-cell.jpg"
+                alt="Paper thumbnail">
+              <div class="pub-meta">
+                <strong>StereoCell - A Virtual Reality Exploration of 3D Immunofluorescence Data</strong>. </br><u>Chahat Kalsi</u> <br>
+                <em>Augmented & Virtual Reality Course Project (New York University)</em>, Fall 2025.
+                <div class="pub-links">
+                  <a href="assets/papers/stereo-cell/StereoCell.pdf" target="_blank"
+                    rel="noopener" type="application/pdf">PDF</a>
+                  <a href="https://github.com/Chahat08/StereoCell">Code</a>
+                  <a href="https://drive.google.com/file/d/1ccjGL4uc0EdfHC8Z1Eklf2Pqm3eTUO_o/view">Video</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="pub-item">
+              <img class="pub-thumb" src="assets/papers/bioset/bioset-poster.jpeg" alt="Paper thumbnail">
               <div class="pub-meta">
                 <strong>BioSET: Biomarker-based Spatial co-Expression analysis in Tumor environments</strong>. </br>
                 <u>Chahat Kalsi</u>, Yuancheng Shen<sup class="eq-mark"
@@ -733,7 +753,7 @@
           </li>
           <li>
             <div class="pub-item">
-              <img class="pub-thumb" src="assets/papers/vox-insight/vox-insight.png" alt="Paper thumbnail">
+              <img class="pub-thumb" src="assets/papers/vox-insight/vox-insight-img.jpeg" alt="Paper thumbnail">
               <div class="pub-meta">
                 <strong>Vox-Insight: Visualization Tool for Multimodal Medical Imaging Data</strong>.<br>
                 <u>Chahat Kalsi</u><sup class="eq-mark"
@@ -747,6 +767,22 @@
                   <a href="https://github.com/Chahat08/Vox-Insight">Code</a>
                   <a href="assets/papers/vox-insight/Vox_Insight_poster.pdf" target="_blank" rel="noopener"
                     type="application/pdf">Poster</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="pub-item">
+              <img class="pub-thumb" src="assets/papers/immersive_volume_rendering/immersive_volume_rendering.png"
+                alt="Paper thumbnail">
+              <div class="pub-meta">
+                <strong>Interactivity for Immersive Volume Visualization</strong>. </br><u>Chahat Kalsi</u> <br>
+                <em>Human-Computer Interaction Course Project (Stony Brook University)</em>, Fall 2024.
+                <div class="pub-links">
+                  <a href="assets/papers/immersive_volume_rendering/Immersive_Volume_Rendering.pdf" target="_blank"
+                    rel="noopener" type="application/pdf">PDF</a>
+                  <a href="https://github.com/Chahat08/VTK_Engine">Code</a>
+                  <a href="https://www.youtube.com/watch?v=GUYwrb5_kNE">Video</a>
                 </div>
               </div>
             </div>
