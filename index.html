@@ -185,6 +185,41 @@
       white-space: nowrap;
     }
 
+    /* publications */
+    ol.posters {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ol.posters li {
+      margin: .8rem 0;
+    }
+
+    .posters-item {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: .75rem;
+      align-items: center;
+    }
+
+    .posters-thumb {
+      width: 150px;
+      height: 120px;
+      object-fit: cover;
+      border: 1px solid var(--rule);
+    }
+
+    .posters-meta {
+      font-size: .95rem
+    }
+
+    .posters-links a {
+      margin-right: .75rem;
+      white-space: nowrap;
+    }
+
+
     /* equal-contribution superscript with tooltip */
     .eq-mark {
       font-size: .75em;
@@ -432,6 +467,23 @@
         display: block;
       }
 
+      /*Posters*/
+      .poster-item {
+        grid-template-columns: 1fr;
+        justify-items: stretch;
+        text-align: left;
+        gap: .6rem;
+      }
+
+      .poster-thumb {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        margin: 0;
+        display: block;
+      }
+
       /* Gallery */
       .gallery {
         display: grid !important;
@@ -491,6 +543,7 @@
         <ul>
           <li><a href="#awards">Awards</a></li>
           <li><a href="#publications">Publications</a></li>
+          <li><a href="#posters">Presentations</a></li>
           <li><a href="#teaching">Teaching</a></li>
           <li><a href="#art">Art</a></li>
         </ul>
@@ -598,27 +651,6 @@
 
           <li>
             <div class="pub-item">
-              <img class="pub-thumb" src="assets/papers/vox-insight/vox-insight.png" alt="Paper thumbnail">
-              <div class="pub-meta">
-                <strong>Vox-Insight: Visualization Tool for Multimodal Medical Imaging Data</strong>.<br>
-                <u>Chahat Kalsi</u><sup class="eq-mark"
-                  data-tip="Equal contribution: Chahat Kalsi &amp; Ashwani Rathee">†</sup>,
-                and Ashwani Rathee<sup class="eq-mark"
-                  data-tip="Equal contribution: Chahat Kalsi &amp; Ashwani Rathee">†</sup><br>
-                <em>Posters, IEEE Visualization and Visual Analytics (VIS)</em>, 2025.
-                <div class="pub-links">
-                  <a href="assets/papers/vox-insight/Vox_Insight.pdf" target="_blank" rel="noopener"
-                    type="application/pdf">PDF</a>
-                  <a href="https://github.com/Chahat08/Vox-Insight">Code</a>
-                  <a href="assets/papers/vox-insight/Vox_Insight_poster.pdf" target="_blank" rel="noopener"
-                    type="application/pdf">Poster</a>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <div class="pub-item">
               <img class="pub-thumb" src="assets/papers/auxiscope/auxiscope.png" alt="Paper thumbnail">
               <div class="pub-meta">
                 <strong>AuxiScope: Handheld Augmented Reality Tablet as an Auxiliary Display for Large-Scale Display
@@ -672,6 +704,53 @@
             </div>
           </li>
 
+        </ol>
+      </section>
+
+      <section id="posters">
+        <h2>Posters, Presentations & Talks</h2>
+        <ol class="posters">
+          <li>
+            <div class="pub-item">
+              <img class="pub-thumb" src="assets/papers/bioset/bioset.png" alt="Paper thumbnail">
+              <div class="pub-meta">
+                <strong>BioSET: Biomarker-based Spatial co-Expression analysis in Tumor environments</strong>. </br>
+                <u>Chahat Kalsi</u>, Yuancheng Shen<sup class="eq-mark"
+                  data-tip="Second authors contributed equally.">†</sup>, Sophia Gaupp<sup class="eq-mark"
+                  data-tip="Second authors contributed equally.">†</sup>, Luca Reichmann<sup class="eq-mark"
+                  data-tip="Second authors contributed equally.">†</sup>, Meri Rogava, Michael Krone, Saeed Boorboor,
+                and Robert Krueger </br> <em>Posters, IEEE Visualization and Visual Analytics (VIS)</em>, 2025. 
+                <div class="pub-links">
+                  <a href="http://biovis.net/2025/data/BioMedVisChallenge2025submissions/9592/final.pdf" target="_blank" rel="noopener"
+                    type="application/pdf">PDF</a>
+                  <a href="https://github.com/nyu-vis-krueger-group/BioSET">Code</a>
+                  <a href="assets/papers/bioset/BioSET_Poster.pdf" target="_blank" rel="noopener"
+                    type="application/pdf">Poster</a>
+                  <a href="https://youtu.be/96r5J5Ku_C8">Video</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="pub-item">
+              <img class="pub-thumb" src="assets/papers/vox-insight/vox-insight.png" alt="Paper thumbnail">
+              <div class="pub-meta">
+                <strong>Vox-Insight: Visualization Tool for Multimodal Medical Imaging Data</strong>.<br>
+                <u>Chahat Kalsi</u><sup class="eq-mark"
+                  data-tip="Equal contribution: Chahat Kalsi &amp; Ashwani Rathee">†</sup>,
+                and Ashwani Rathee<sup class="eq-mark"
+                  data-tip="Equal contribution: Chahat Kalsi &amp; Ashwani Rathee">†</sup><br>
+                <em>Posters, IEEE Visualization and Visual Analytics (VIS)</em>, 2025.
+                <div class="pub-links">
+                  <a href="assets/papers/vox-insight/Vox_Insight.pdf" target="_blank" rel="noopener"
+                    type="application/pdf">PDF</a>
+                  <a href="https://github.com/Chahat08/Vox-Insight">Code</a>
+                  <a href="assets/papers/vox-insight/Vox_Insight_poster.pdf" target="_blank" rel="noopener"
+                    type="application/pdf">Poster</a>
+                </div>
+              </div>
+            </div>
+          </li>
         </ol>
       </section>
 
