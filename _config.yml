@@ -1,0 +1,35 @@
+title: Chahat Kalsi
+description: >-
+  Chahat Kalsi's personal academic website: research,
+  publications, awards, teaching, and artworks.
+url: "https://chahat08.github.io"
+baseurl: ""
+
+markdown: kramdown
+permalink: pretty
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: project
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

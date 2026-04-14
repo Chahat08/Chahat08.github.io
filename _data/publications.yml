@@ -1,0 +1,49 @@
+- title: "BioSET: Biomarker-based Spatial co-Expression analysis in Tumor environments"
+  badge: Award of Excellence
+  authors: >-
+    <u>Chahat Kalsi</u>, Yuancheng Shen<sup class="eq-mark"
+    data-tip="Second authors contributed equally.">†</sup>,
+    Sophia Gaupp<sup class="eq-mark"
+    data-tip="Second authors contributed equally.">†</sup>,
+    Luca Reichmann<sup class="eq-mark"
+    data-tip="Second authors contributed equally.">†</sup>,
+    Meri Rogava, Michael Krone, Saeed Boorboor, and Robert Krueger
+  venue: "Bio+MedVis Challenge, IEEE Visualization and Visual Analytics (VIS), 2025"
+  thumb: papers/bioset/bioset.png
+  links:
+    - label: PDF
+      url: http://biovis.net/2025/data/BioMedVisChallenge2025submissions/9592/final.pdf
+    - label: Code
+      url: https://github.com/nyu-vis-krueger-group/BioSET
+    - label: Poster
+      url: assets/papers/bioset/BioSET_Poster.pdf
+    - label: Video
+      url: https://youtu.be/96r5J5Ku_C8
+
+- title: "AuxiScope: Handheld Augmented Reality Tablet as an Auxiliary Display for Large-Scale Display Systems"
+  authors: >-
+    Matthew Castellana, <u>Chahat Kalsi</u>, Yoonsang Kim,
+    Saeed Boorboor, and Arie Kaufman
+  venue: "IEEE International Symposium on Mixed and Augmented Reality (ISMAR), 2025"
+  thumb: papers/auxiscope/auxiscope.png
+  links:
+    - label: PDF
+      url: https://ieeexplore.ieee.org/document/11220340
+    - label: Video
+      url: "video.html?title=AuxiScope%3A%20Handheld%20Augmented%20Reality%20Tablet%20as%20an%20Auxiliary%20Display%20for%20Large-Scale%20Display%20Systems&video=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1pU-aKIqnVKFD64--6QUnC2ZBzErxuvLL%2Fpreview&pdf=https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F11220340&authors=Matthew%20Castellana%2C%20Chahat%20Kalsi%2C%20Yoonsang%20Kim%2C%20Saeed%20Boorboor%2C%20and%20Arie%20Kaufman"
+
+- title: "Silo: Half-Gigapixel Cylindrical Stereoscopic Immersive Display"
+  authors: >-
+    Saeed Boorboor<sup class="eq-mark"
+    data-tip="Equal contribution: Saeed Boorboor &amp; Doris Gutiérrez-Rosales">†</sup>,
+    Doris Gutiérrez-Rosales<sup class="eq-mark"
+    data-tip="Equal contribution: Saeed Boorboor &amp; Doris Gutiérrez-Rosales">†</sup>,
+    Ahamed Shoaib, <u>Chahat Kalsi</u>, Yue Wang, Yuyang Cao,
+    Xianfeng Gu, and Arie Kaufman
+  venue: "IEEE Conference Virtual Reality and 3D User Interfaces (VR), 2025"
+  thumb: papers/silo/silo.gif
+  links:
+    - label: PDF
+      url: https://ieeexplore.ieee.org/document/10937398
+    - label: Video
+      url: https://www.youtube.com/watch?v=jz67T8JCUco

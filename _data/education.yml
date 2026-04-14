@@ -1,0 +1,17 @@
+- name: New York University
+  logo: edu/nyu.png
+  url: https://www.nyu.edu/
+  degree: PhD, Computer Science
+  years: 2025-Present
+
+- name: Stony Brook University
+  logo: edu/sbu.jpg
+  url: https://www.stonybrook.edu/
+  degree: M.S., Computer Science
+  years: 2023-2025
+
+- name: Panjab University
+  logo: edu/pu.png
+  url: https://puchd.ac.in/
+  degree: B.E., Computer Science
+  years: 2019-2023

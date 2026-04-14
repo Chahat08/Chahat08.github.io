@@ -1,0 +1,27 @@
+---
+layout: page
+title: Projects
+page_title: Projects
+permalink: /projects/
+---
+
+{% if site.projects.size > 0 %}
+<div class="project-list">
+  {% assign sorted = site.projects | sort: "date" | reverse %}
+  {% for project in sorted %}
+  <a class="project-card" href="{{ project.url | relative_url }}">
+    {% if project.thumb %}
+    <img src="{{ project.thumb | prepend: '/assets/' | relative_url }}" alt="{{ project.title }}">
+    {% endif %}
+    <div class="project-card-body">
+      <h3>{{ project.title }}</h3>
+      {% if project.subtitle %}
+      <p>{{ project.subtitle }}</p>
+      {% endif %}
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% else %}
+<p class="muted">Projects coming soon!</p>
+{% endif %}

@@ -1,0 +1,22 @@
+---
+layout: page
+title: Blog
+page_title: Blog
+permalink: /blog/
+---
+
+{% if site.posts.size > 0 %}
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    {% if post.excerpt %}
+    <p class="muted">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="muted">Nothing here yet — check back soon!</p>
+{% endif %}

@@ -1,0 +1,7 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title and page.title != site.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+<link rel="icon" type="image/png" href="{{ '/assets/icon.png' | relative_url }}" />
+<meta name="description" content="{{ page.description | default: site.description }}">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<script src="https://kit.fontawesome.com/823e0dbe58.js" crossorigin="anonymous"></script>

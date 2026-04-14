@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<article>
+  {% if page.thumb %}
+  <img src="{{ page.thumb | prepend: '/assets/' | relative_url }}"
+       alt="{{ page.title }}"
+       style="width:100%; max-height:300px; object-fit:cover; border:1px solid var(--rule); margin-bottom:1rem;">
+  {% endif %}
+
+  <h2>{{ page.title }}</h2>
+  {% if page.subtitle %}
+  <p class="muted">{{ page.subtitle }}</p>
+  {% endif %}
+
+  {% if page.links %}
+  <p class="pub-links">
+    {% for link in page.links %}
+    <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+    {% endfor %}
+  </p>
+  {% endif %}
+
+  <hr>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <hr>
+  <p class="muted"><a href="{{ '/projects/' | relative_url }}">← Back to all projects</a></p>
+</article>
