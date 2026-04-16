@@ -114,7 +114,7 @@ nav li + li::before {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 1px solid var(--ink);
+  border: 3px solid var(--ink);
   box-sizing: border-box;
 }
 
