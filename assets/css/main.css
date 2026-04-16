@@ -143,7 +143,7 @@ nav li + li::before {
   object-fit: contain;
   object-position: center;
   background: #fff;
-  border: 1px solid var(--ink);
+  border: 3px solid var(--ink);
   padding: .2rem;
   margin: 0 auto;
   box-sizing: border-box;
