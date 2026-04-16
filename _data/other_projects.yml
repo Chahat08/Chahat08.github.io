@@ -1,0 +1,23 @@
+- title: "StereoCell - A Virtual Reality Exploration of 3D Immunofluorescence Data"
+  authors: "<u>Chahat Kalsi</u>"
+  venue: "Augmented & Virtual Reality Course Project (New York University), Fall 2025"
+  thumb: papers/stereo-cell/stereo-cell.jpg
+  links:
+    - label: PDF
+      url: assets/papers/stereo-cell/StereoCell.pdf
+    - label: Code
+      url: https://github.com/Chahat08/StereoCell
+    - label: Video
+      url: https://drive.google.com/file/d/1ccjGL4uc0EdfHC8Z1Eklf2Pqm3eTUO_o/view
+
+- title: "Interactivity for Immersive Volume Visualization"
+  authors: "<u>Chahat Kalsi</u>"
+  venue: "Human-Computer Interaction Course Project (Stony Brook University), Fall 2024"
+  thumb: papers/immersive_volume_rendering/immersive_volume_rendering.png
+  links:
+    - label: PDF
+      url: assets/papers/immersive_volume_rendering/Immersive_Volume_Rendering.pdf
+    - label: Code
+      url: https://github.com/Chahat08/VTK_Engine
+    - label: Video
+      url: https://www.youtube.com/watch?v=GUYwrb5_kNE

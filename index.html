@@ -101,6 +101,30 @@ title: Chahat Kalsi
   </ol>
 </section>
 
+<!-- Other Projects -->
+<section id="other-projects">
+  <h2>Other Projects</h2>
+  <ol class="pubs">
+    {% for pub in site.data.other_projects %}
+    <li>
+      <div class="pub-item">
+        <img class="pub-thumb" src="{{ pub.thumb | prepend: '/assets/' | relative_url }}" alt="Paper thumbnail">
+        <div class="pub-meta">
+          <strong>{{ pub.title }}</strong>
+          <br>{{ pub.authors }}
+          <br><em>{{ pub.venue }}</em>
+          <div class="pub-links">
+            {% for link in pub.links %}
+            <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
 <!-- Teaching -->
 <section id="teaching">
   <h2>Teaching</h2>
