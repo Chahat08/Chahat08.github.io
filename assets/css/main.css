@@ -365,6 +365,83 @@ ol.pubs li, ol.posters li {
   border-bottom: none;
 }
 
+.post-list-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: .75rem;
+  align-items: center;
+}
+
+.post-thumb {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid var(--ink);
+  box-sizing: border-box;
+  display: block;
+}
+
+.post-teaser {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border: 3px solid var(--ink);
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+/* ========== Blog Card Grid (index.html preview) ========== */
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.blog-card {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid var(--rule);
+  text-decoration: none;
+  color: inherit;
+  background: #f8f5ee;
+  transition: box-shadow .15s ease, border-color .15s ease;
+}
+
+.blog-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  border-color: var(--ink);
+}
+
+.blog-card:visited {
+  color: inherit;
+}
+
+.blog-card-thumb {
+  width: 100px;
+  min-width: 100px;
+  height: 100%;
+  min-height: 90px;
+  object-fit: cover;
+  border-right: 1px solid var(--rule);
+}
+
+.blog-card-body {
+  padding: .75rem 1rem;
+  min-width: 0;
+}
+
+.blog-card-body h3 {
+  margin: 0 0 .3rem 0;
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+
+.blog-card-body .post-date {
+  font-size: .85rem;
+}
+
 .post-date {
   color: var(--muted);
   font-size: .9rem;
@@ -476,10 +553,13 @@ footer {
   .edu-inline small { margin: 0; }
   .pub-item { grid-template-columns: 1fr; justify-items: stretch; text-align: left; gap: .6rem; }
   .pub-thumb { width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; margin: 0; display: block; }
+  .post-list-item { grid-template-columns: 1fr; gap: .6rem; }
+  .post-thumb { width: 100%; height: auto; aspect-ratio: 16/9; }
   .gallery { display: grid !important; grid-template-columns: repeat(2, 1fr); gap: .75rem; }
   .gallery figure { width: 100% !important; margin: 0; }
   .gallery img { width: 100%; aspect-ratio: 4 / 3; height: auto; object-fit: cover; }
   .gallery figcaption { text-align: center; margin-top: .3rem; }
+  .blog-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 460px) {

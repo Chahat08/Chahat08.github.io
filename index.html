@@ -139,38 +139,26 @@ title: Chahat Kalsi
   </ul>
 </section>
 
-<!-- Blogs (Featured) -->
-<section id="blogs">
-  <h2>Blogs</h2>
-  <p class="muted">Musings on things that interest me.</p>
-  <div class="gallery">
-    {% for painting in site.data.art_featured %}
-    <figure>
-      <a href="{{ painting.file | prepend: '/assets/' | relative_url }}" target="_blank">
-        <img src="{{ painting.file | prepend: '/assets/' | relative_url }}" alt="{{ painting.alt }}">
-      </a>
-      <figcaption>{{ painting.caption }}</figcaption>
-    </figure>
+<!-- Blog (Featured) -->
+<section id="blog-preview">
+  <h2>Blog</h2>
+  <div class="blog-grid">
+    {% assign recent_posts = site.posts | limit: 4 %}
+    {% for post in recent_posts %}
+    <a class="blog-card" href="{{ post.url | relative_url }}">
+      {% if post.teaser %}
+      <img class="blog-card-thumb"
+           src="{{ post.teaser | prepend: '/assets/' | relative_url }}"
+           alt="{{ post.teaser_alt | default: post.title }}">
+      {% endif %}
+      <div class="blog-card-body">
+        <h3>{{ post.title }}</h3>
+        <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </div>
+    </a>
     {% endfor %}
   </div>
-  <p class="more-art"><a href="{{ '/art' | relative_url }}">Like my art? Here's where you can see more of it!</a></p>
-</section>
-
-<!-- Computer Graphics (Featured) -->
-<section id="computer-graphics">
-  <h2>Computer Graphics</h2>
-  <p class="muted">Shaders, ShaderToys, and other fun stuff!</p>
-  <div class="gallery">
-    {% for painting in site.data.art_featured %}
-    <figure>
-      <a href="{{ painting.file | prepend: '/assets/' | relative_url }}" target="_blank">
-        <img src="{{ painting.file | prepend: '/assets/' | relative_url }}" alt="{{ painting.alt }}">
-      </a>
-      <figcaption>{{ painting.caption }}</figcaption>
-    </figure>
-    {% endfor %}
-  </div>
-  <p class="more-art"><a href="{{ '/art' | relative_url }}">Like my art? Here's where you can see more of it!</a></p>
+  <p class="more-art"><a href="{{ '/blog/' | relative_url }}">Check out my other posts</a></p>
 </section>
 
 <!-- Art (Featured) -->
@@ -192,3 +180,4 @@ title: Chahat Kalsi
   </div>
   <p class="more-art"><a href="{{ '/art' | relative_url }}">Like my art? Here's where you can see more of it!</a></p>
 </section>
+

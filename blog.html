@@ -8,12 +8,21 @@ permalink: /blog/
 {% if site.posts.size > 0 %}
 <ul class="post-list">
   {% for post in site.posts %}
-  <li>
-    <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
-    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-    {% if post.excerpt %}
-    <p class="muted">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+  <li class="post-list-item">
+    {% if post.teaser %}
+    <a href="{{ post.url | relative_url }}">
+      <img class="post-thumb"
+           src="{{ post.teaser | prepend: '/assets/' | relative_url }}"
+           alt="{{ post.teaser_alt | default: post.title }}">
+    </a>
     {% endif %}
+    <div class="post-list-body">
+      <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      {% if post.excerpt %}
+      <p class="muted">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </div>
   </li>
   {% endfor %}
 </ul>
