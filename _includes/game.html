@@ -1,0 +1,10 @@
+<div class="game-entry">
+  {% if include.icon %}<img class="game-icon" src="{{ include.icon | prepend: '/assets/blog/games/' | relative_url }}" alt="{{ include.title }} icon" onerror="this.outerHTML='&lt;span class=&quot;game-icon game-icon-placeholder&quot; aria-hidden=&quot;true&quot;&gt;&#127918;&lt;/span&gt;'">{% else %}<span class="game-icon game-icon-placeholder" aria-hidden="true">🎮</span>{% endif %}
+  <div class="game-info">
+    <div class="game-title-row">
+      <span class="game-title">{{ include.title }}</span>
+      {% if include.rating %}{% include stars.html rating=include.rating %}{% endif %}
+    </div>
+    {% if include.note %}<p class="game-note">{{ include.note }}</p>{% endif %}
+  </div>
+</div>

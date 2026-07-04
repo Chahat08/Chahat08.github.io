@@ -139,33 +139,6 @@ title: Chahat Kalsi
   </ul>
 </section>
 
-<!-- Blog (Featured) -->
-<section id="blog-preview">
-  <h2>Blog</h2>
-  <div class="blog-grid">
-    {% assign featured_posts = site.posts | where: "featured", true %}
-    {% if featured_posts.size > 0 %}
-      {% assign display_posts = featured_posts | limit: 4 %}
-    {% else %}
-      {% assign display_posts = site.posts | limit: 4 %}
-    {% endif %}
-    {% for post in display_posts %}
-    <a class="blog-card" href="{{ post.url | relative_url }}">
-      {% if post.teaser %}
-      <img class="blog-card-thumb"
-           src="{{ post.teaser | prepend: '/assets/' | relative_url }}"
-           alt="{{ post.teaser_alt | default: post.title }}">
-      {% endif %}
-      <div class="blog-card-body">
-        <h3>{{ post.title }}</h3>
-        <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
-      </div>
-    </a>
-    {% endfor %}
-  </div>
-  <p class="more-art"><a href="{{ '/blog/' | relative_url }}">Read more posts →</a></p>
-</section>
-
 <!-- Art (Featured) -->
 <section id="art">
   <h2>Art</h2>
@@ -186,3 +159,29 @@ title: Chahat Kalsi
   <p class="more-art"><a href="{{ '/art' | relative_url }}">Like my art? Here's where you can see more of it!</a></p>
 </section>
 
+<!-- Blog (Featured) -->
+<section id="blog-preview">
+  <h2>Blog</h2>
+  <div class="blog-grid">
+    {% assign featured_posts = site.posts | where: "featured", true %}
+    {% if featured_posts.size > 0 %}
+      {% assign display_posts = featured_posts | limit: 6 %}
+    {% else %}
+      {% assign display_posts = site.posts | limit: 6 %}
+    {% endif %}
+    {% for post in display_posts %}
+    <a class="blog-card" href="{{ post.url | relative_url }}">
+      {% if post.teaser %}
+      <img class="blog-card-thumb"
+           src="{{ post.teaser | prepend: '/assets/' | relative_url }}"
+           alt="{{ post.teaser_alt | default: post.title }}">
+      {% endif %}
+      <div class="blog-card-body">
+        <h3>{{ post.title }}</h3>
+        <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+  <p class="more-art"><a href="{{ '/blog/' | relative_url }}">Check out more posts.</a></p>
+</section>

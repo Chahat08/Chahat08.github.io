@@ -2,16 +2,18 @@
 title: Hello World
 teaser: blog/helloworld/icon.png
 teaser_alt: My handwritten initials.
-featured: true
+featured: false
 ---
 
-This is my first blog post. I just migrated my website to Jekyll and I'm excited about how much easier it is to add content now.
+This is my first blog post. 
 
-## Why Jekyll?
+## How to Add Another Blog
 
-I wanted something that works with GitHub Pages without any build pipeline, keeps my retro aesthetic, and lets me write in Markdown instead of wrestling with HTML.
+Instructions in case i need to refer to them in the future.
 
-Adding a new blog post is now as simple as creating a Markdown file in the `_posts/` folder. No more copy-pasting boilerplate HTML!
+Create a Markdown file in the `_posts/` folder. Needs to be in format: `YYYY-MM-DD-PostName.md`.  
+Thumbnail images go in `assets/blog` folder.  
+Set `featured: true` if the blog should show in home page (max 6 blogs show).
 
 ## What's Next
 
