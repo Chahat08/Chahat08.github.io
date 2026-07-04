@@ -1,7 +1,8 @@
 ---
 title: Hello World
 teaser: blog/helloworld/icon.png
-teaser_alt: A cluttered desk with a laptop open to a code editor
+teaser_alt: My handwritten initials.
+featured: true
 ---
 
 This is my first blog post. I just migrated my website to Jekyll and I'm excited about how much easier it is to add content now.

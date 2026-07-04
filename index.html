@@ -143,8 +143,13 @@ title: Chahat Kalsi
 <section id="blog-preview">
   <h2>Blog</h2>
   <div class="blog-grid">
-    {% assign recent_posts = site.posts | limit: 4 %}
-    {% for post in recent_posts %}
+    {% assign featured_posts = site.posts | where: "featured", true %}
+    {% if featured_posts.size > 0 %}
+      {% assign display_posts = featured_posts | limit: 4 %}
+    {% else %}
+      {% assign display_posts = site.posts | limit: 4 %}
+    {% endif %}
+    {% for post in display_posts %}
     <a class="blog-card" href="{{ post.url | relative_url }}">
       {% if post.teaser %}
       <img class="blog-card-thumb"
@@ -158,7 +163,7 @@ title: Chahat Kalsi
     </a>
     {% endfor %}
   </div>
-  <p class="more-art"><a href="{{ '/blog/' | relative_url }}">Check out my other posts</a></p>
+  <p class="more-art"><a href="{{ '/blog/' | relative_url }}">Read more posts →</a></p>
 </section>
 
 <!-- Art (Featured) -->
