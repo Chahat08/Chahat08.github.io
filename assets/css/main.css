@@ -315,6 +315,25 @@ ol.pubs li, ol.posters li {
   text-align: center;
 }
 
+.gallery .graphic-thumb {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border: 1px solid var(--ink);
+  box-sizing: border-box;
+}
+
+.graphic-embed {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  margin: .5rem auto 0;
+  border: 1px solid var(--ink);
+  box-sizing: border-box;
+}
+
 .more-art {
   text-align: center;
   margin-top: .5rem;
@@ -595,7 +614,8 @@ footer {
   .post-thumb { width: 100%; height: auto; aspect-ratio: 16/9; }
   .gallery { display: grid !important; grid-template-columns: repeat(2, 1fr); gap: .75rem; }
   .gallery figure { width: 100% !important; margin: 0; }
-  .gallery img { width: 100%; aspect-ratio: 4 / 3; height: auto; object-fit: cover; }
+  .gallery img,
+  .gallery .graphic-thumb { width: 100%; aspect-ratio: 4 / 3; height: auto; object-fit: cover; }
   .gallery figcaption { text-align: center; margin-top: .3rem; }
   .blog-grid { grid-template-columns: 1fr; }
 }
