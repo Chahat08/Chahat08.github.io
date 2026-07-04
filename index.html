@@ -139,6 +139,40 @@ title: Chahat Kalsi
   </ul>
 </section>
 
+<!-- Blogs (Featured) -->
+<section id="blogs">
+  <h2>Blogs</h2>
+  <p class="muted">Musings on things that interest me.</p>
+  <div class="gallery">
+    {% for painting in site.data.art_featured %}
+    <figure>
+      <a href="{{ painting.file | prepend: '/assets/' | relative_url }}" target="_blank">
+        <img src="{{ painting.file | prepend: '/assets/' | relative_url }}" alt="{{ painting.alt }}">
+      </a>
+      <figcaption>{{ painting.caption }}</figcaption>
+    </figure>
+    {% endfor %}
+  </div>
+  <p class="more-art"><a href="{{ '/art' | relative_url }}">Like my art? Here's where you can see more of it!</a></p>
+</section>
+
+<!-- Computer Graphics (Featured) -->
+<section id="computer-graphics">
+  <h2>Computer Graphics</h2>
+  <p class="muted">Shaders, ShaderToys, and other fun stuff!</p>
+  <div class="gallery">
+    {% for painting in site.data.art_featured %}
+    <figure>
+      <a href="{{ painting.file | prepend: '/assets/' | relative_url }}" target="_blank">
+        <img src="{{ painting.file | prepend: '/assets/' | relative_url }}" alt="{{ painting.alt }}">
+      </a>
+      <figcaption>{{ painting.caption }}</figcaption>
+    </figure>
+    {% endfor %}
+  </div>
+  <p class="more-art"><a href="{{ '/art' | relative_url }}">Like my art? Here's where you can see more of it!</a></p>
+</section>
+
 <!-- Art (Featured) -->
 <section id="art">
   <h2>Art</h2>

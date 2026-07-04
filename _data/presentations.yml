@@ -1,3 +1,13 @@
+- title: "Guided Discovery in Multiplexed Volumetric Data"
+  authors: >-
+    <u>Chahat Kalsi</u>
+  venue: "Cyberinfrastructure for Network Science (CNS) Center, Indiana University, 2026"
+  thumb: talks/guided_discovery/guided_discovery.png
+  links:
+    - label: PDF
+      url: assets/talks/guided_discovery/Guided_Discovery_in_Multiplexed_Volumetric_Data.pdf
+
+
 - title: "BioSET: Biomarker-based Spatial co-Expression analysis in Tumor environments"
   authors: >-
     <u>Chahat Kalsi</u>, Yuancheng Shen<sup class="eq-mark"
