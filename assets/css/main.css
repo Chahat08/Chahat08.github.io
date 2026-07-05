@@ -503,6 +503,35 @@ ol.pubs li, ol.posters li {
   font-size: .9em;
 }
 
+/* ---- Rouge syntax highlighting (warm light theme) ---- */
+.post-content .highlight { background: transparent; }
+.post-content .highlight .c,
+.post-content .highlight .c1,
+.post-content .highlight .cm,
+.post-content .highlight .cp,
+.post-content .highlight .cs { color: #9a8f78; font-style: italic; } /* comments */
+.post-content .highlight .k,
+.post-content .highlight .kd,
+.post-content .highlight .kn,
+.post-content .highlight .kr,
+.post-content .highlight .kc { color: #a0522d; font-weight: 600; } /* keywords */
+.post-content .highlight .kt { color: #8a5a2b; font-weight: 600; } /* types (vec2, float) */
+.post-content .highlight .mi,
+.post-content .highlight .mf,
+.post-content .highlight .mh,
+.post-content .highlight .il { color: #6f5ea0; } /* numbers */
+.post-content .highlight .s,
+.post-content .highlight .s1,
+.post-content .highlight .s2,
+.post-content .highlight .se { color: #4f7a3f; } /* strings */
+.post-content .highlight .nf { color: #2f6d8c; } /* function names */
+.post-content .highlight .nb { color: #2f6d8c; } /* builtins */
+.post-content .highlight .nl { color: #8a5a2b; } /* labels */
+.post-content .highlight .o { color: #7a6b52; } /* operators */
+.post-content .highlight .p { color: var(--ink); } /* punctuation */
+.post-content .highlight .n { color: var(--ink); } /* plain names */
+.post-content .highlight .err { color: inherit; background: transparent; } /* no red error boxes */
+
 .post-content blockquote {
   border-left: 3px solid var(--rule);
   margin: 1rem 0;
