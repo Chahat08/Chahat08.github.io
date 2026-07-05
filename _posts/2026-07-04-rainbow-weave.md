@@ -2,7 +2,7 @@
 title: Rainbow Weave (Shadertoy)
 teaser: graphics/rainbow_weave.png
 teaser_alt: Rainbow Weave shader
-featured: false
+featured: true
 graphic: true
 graphic_video: graphics/rainbow_weave.webm
 graphic_poster: graphics/rainbow_weave.png

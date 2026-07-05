@@ -2,7 +2,7 @@
 title: Rubies&Emeralds (Shadertoy)
 teaser: blog/rubies_emeralds/rubies_emeralds.png
 teaser_alt: Rubies&Emeralds shader
-featured: false
+featured: true
 graphic: true
 graphic_video: blog/rubies_emeralds/rubies_emeralds.webm
 graphic_poster: blog/rubies_emeralds/rubies_emeralds.png
