@@ -41,12 +41,17 @@ vec2 rotate(vec2 uv, float angle)
     return mat2(cos(angle),sin(angle),-sin(angle),cos(angle))*uv;
 }
 
-
-
 // https://mathworld.wolfram.com/HeartCurve.html#:~:text=A%20sixth%20heart%20curve%20is%20given%20by%20the%20simple%20expression
 float sdHeart(vec2 uv)
 {
     return (uv.x*uv.x)+pow((uv.y-pow((uv.x*uv.x),1./3.)),2.)-1.;
+}
+
+float opRepHeart(vec2 p,vec2 c)
+{
+    vec2 q = mod(p+0.5*c,c)-0.5*c;
+    q = scale(q, vec2(0.05*sin(iTime)));
+    return sdHeart(q);
 }
 
 // https://www.shadertoy.com/view/MlycD3
@@ -197,6 +202,7 @@ vec3 scene(vec2 uv)
     //background
     float bands = step(0.0, sin(100.*uv.x - 10.0*iTime));
     vec3 bgColor = vec3(bands);
+    float bgHearts=step(0.,sin(uv.y-opRepHeart(uv,vec2(0.1,0.1))));
 
     // red color
     const vec3 RED=vec3(1.0,0.,0.);
@@ -234,6 +240,7 @@ vec3 scene(vec2 uv)
     
     //mixing
     scene=bgColor;
+    scene=mix(RED,scene,bgHearts);
     scene=mix(cardColor,scene,step(0.,dCard));
     scene=mix(RED,scene,step(0.,dHeartMiddle));
     scene=mix(RED,scene,step(0.,dHeartTop));
