@@ -50,7 +50,7 @@ float sdHeart(vec2 uv)
 float opRepHeart(vec2 p,vec2 c)
 {
     vec2 q = mod(p+0.5*c,c)-0.5*c;
-    q = scale(q, vec2(0.05*sin(iTime)));
+    q = scale(q, vec2(0.02 + 0.01*sin(iTime)));
     return sdHeart(q);
 }
 
@@ -202,7 +202,7 @@ vec3 scene(vec2 uv)
     //background
     float bands = step(0.0, sin(100.*uv.x - 10.0*iTime));
     vec3 bgColor = vec3(bands);
-    float bgHearts=step(0.,sin(uv.y-opRepHeart(uv,vec2(0.1,0.1))));
+    float bgHearts=smoothstep(-1.,1.,opRepHeart(uv,vec2(0.1,0.1)));
 
     // red color
     const vec3 RED=vec3(1.0,0.,0.);
