@@ -1,12 +1,12 @@
 ---
-title: Ace of Hearts (Shadertoy)
+title: Aces of Hearts (Shadertoy)
 teaser: blog/ace_of_hearts/ace_of_hearts.png
-teaser_alt: Ace of Hearts shader
+teaser_alt: Aces of Hearts shader
 featured: false
 graphic: true
 graphic_video: blog/ace_of_hearts/ace_of_hearts.webm
 graphic_poster: blog/ace_of_hearts/ace_of_hearts.png
-graphic_caption: Ace of Hearts (Shadertoy)
+graphic_caption: Aces of Hearts (Shadertoy)
 ---
 
 <video class="graphic-embed" controls autoplay loop muted playsinline
@@ -15,7 +15,7 @@ graphic_caption: Ace of Hearts (Shadertoy)
   Your browser does not support the video tag.
 </video>
 
-I made this as an initial exploration into 2D SDFs — practicing how to define and combine 2D signed distance fields. You can see it live [here on Shadertoy](https://www.shadertoy.com/view/sf3GW7).
+I made this as an initial exploration into 2D SDFs — practicing how to define and combine 2D signed distance fields. You can see it live [here on Shadertoy](https://www.shadertoy.com/view/fcc3RS).
 
 **Resources:**
 
@@ -195,25 +195,14 @@ float sdATop(vec2 uv)
     return result;
 }
 
-vec3 scene(vec2 uv)
-{
-    vec3 scene=vec3(0.);
-    
-    //background
-    float bands = step(0.0, sin(100.*uv.x - 10.0*iTime));
-    vec3 bgColor = vec3(bands);
-    float bgHearts=smoothstep(-1.,1.,opRepHeart(uv,vec2(0.1,0.1)));
-
-    // red color
-    const vec3 RED=vec3(1.0,0.,0.);
-    const float PI = 3.14159265359;
-    
+float sdCardComponents(vec2 uv, const float PI)
+{    
     // card rounded box
     float cardR=0.05;
     vec2 cardDim=vec2(0.25,0.3);
     float dCard=opRound(uv,cardDim,cardR);
-    float cardIntensity =clamp(1.0 + dCard/max(cardDim.x,cardDim.y),0.0,1.0);
-    vec3 cardColor = vec3(242., 240., 220.)/255.*vec3(cardIntensity);
+    //float cardIntensity =clamp(1.0 + dCard/max(cardDim.x,cardDim.y),0.0,1.0);
+    //vec3 cardColor = vec3(242., 240., 220.)/255.*vec3(cardIntensity);
     
     // heart middle
     vec2 heartMiddleScale=vec2(0.06);
@@ -238,16 +227,60 @@ vec3 scene(vec2 uv)
     //A bottom
     float aBottom = sdATop(rotate(uv,PI));
     
+    float dFullCard=min(dHeartMiddle,dHeartTop);
+    dFullCard=min(dFullCard,dHeartBottom);
+    dFullCard=min(dFullCard,aTop);
+    dFullCard=min(dFullCard,aBottom);
+    
+    return dFullCard;
+}
+
+vec4 sdCard(vec2 uv, const float PI, const vec3 RED)
+{
+    // card background shading
+    float cardR = 0.05;
+    vec2 cardDim = vec2(0.25, 0.3);
+    float dCard = opRound(uv, cardDim, cardR);
+    float cardIntensity = clamp(1.0 + dCard/max(cardDim.x, cardDim.y), 0.0, 1.0);
+    vec3 cardColor = vec3(242., 240., 220.)/255. * vec3(cardIntensity);
+
+    // red shapes on top (hearts + As)
+    float dCardComponent = sdCardComponents(uv, PI);
+    vec3 col = mix(RED, cardColor, step(0., dCardComponent));
+
+    // 1 inside,0outside
+    float alpha = 1.0 - step(0., dCard);
+
+    return vec4(col, alpha);
+}
+
+vec4 opRepCard(vec2 p, vec2 c, const float PI, const vec3 RED)
+{
+    float speed = 0.15;
+    p.y+=speed*iTime;
+    vec2 q=mod(p+0.5*c,c)-0.5*c;
+    q=scale(q,vec2(0.6));
+    return sdCard(q, PI, RED);
+}
+
+vec3 scene(vec2 uv)
+{
+    vec3 scene=vec3(0.);
+    
+    //background
+    float bands = step(0.0, sin(100.*uv.x - 10.0*iTime));
+    vec3 bgColor = vec3(bands);
+    float bgHearts=smoothstep(-1.,1.,opRepHeart(uv,vec2(0.1,0.1)));
+
+    // red color
+    const vec3 RED=vec3(1.0,0.,0.);
+    const float PI= 3.14159;
+    
     //mixing
     scene=bgColor;
     scene=mix(RED,scene,bgHearts);
-    scene=mix(cardColor,scene,step(0.,dCard));
-    scene=mix(RED,scene,step(0.,dHeartMiddle));
-    scene=mix(RED,scene,step(0.,dHeartTop));
-    scene=mix(RED,scene,step(0.,dHeartBottom));
-    scene=mix(RED,scene,step(0.,aTop));
-    scene=mix(RED,scene,step(0.,aBottom));
-    
+    vec4 cards = opRepCard(uv, vec2(0.5, 0.5), PI, RED);
+    scene = mix(scene, cards.rgb, cards.a);
     
     return scene;
 }
