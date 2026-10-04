@@ -16,25 +16,6 @@
     - label: Poster
       url: assets/talks/ESSB_BioSET/ESSB2026_Poster_BioSET.pdf
 
-- title: "Scalable Web-based Visual Analytics for 3D Multiplexed Tissue Images"
-  authors: >-
-    <u>Chahat Kalsi</u>, Hossein Fathollahian, Luca Reichmann, Sophia Gaupp, Yuancheng Shen, G. Elisabeta Marai, Michael Krone, Saeed Boorboor, Robert Krüger
-  venue: "3D Day Seminar, ESSB, 2026"
-  thumb: talks/3D_Day/3D_Day.png
-  links:
-    - label: PDF
-      url: assets/talks/3D_Day/ESSB_3D_Day_Chahatkalsi.pdf      
-
-- title: "Guided Discovery in Multiplexed Volumetric Data"
-  authors: >-
-    <u>Chahat Kalsi</u>
-  venue: "Cyberinfrastructure for Network Science (CNS) Center, Indiana University, 2026"
-  thumb: talks/guided_discovery/guided_discovery.png
-  links:
-    - label: PDF
-      url: assets/talks/guided_discovery/Guided_Discovery_in_Multiplexed_Volumetric_Data.pdf
-
-
 - title: "BioSET: Biomarker-based Spatial co-Expression analysis in Tumor environments"
   authors: >-
     <u>Chahat Kalsi</u>, Yuancheng Shen<sup class="eq-mark"

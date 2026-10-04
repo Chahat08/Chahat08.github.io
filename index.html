@@ -77,11 +77,35 @@ title: Chahat Kalsi
   </ol>
 </section>
 
-<!-- Posters, Presentations & Talks -->
+<!-- Posters -->
 <section id="posters">
-  <h2>Posters, Presentations &amp; Talks</h2>
+  <h2>Posters</h2>
   <ol class="pubs">
-    {% for pub in site.data.presentations %}
+    {% for pub in site.data.posters %}
+    <li>
+      <div class="pub-item">
+        <img class="pub-thumb" src="{{ pub.thumb | prepend: '/assets/' | relative_url }}" alt="Paper thumbnail">
+        <div class="pub-meta">
+          <strong>{{ pub.title }}</strong>
+          <br><span class="pub-authors">{{ pub.authors }}</span>
+          <br><em>{{ pub.venue }}</em>
+          <div class="pub-links">
+            {% for link in pub.links %}
+            <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<!-- Presentations & Talks -->
+<section id="talks">
+  <h2>Presentations &amp; Talks</h2>
+  <ol class="pubs">
+    {% for pub in site.data.talks %}
     <li>
       <div class="pub-item">
         <img class="pub-thumb" src="{{ pub.thumb | prepend: '/assets/' | relative_url }}" alt="Paper thumbnail">
