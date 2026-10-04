@@ -1,3 +1,30 @@
+- title: "Human-in-the-loop Characterization of Tissue Microenvironments: From Intensity Averaging to Representation Learning"
+  authors: >-
+    Yuancheng Shen (Presenting Author), <u>Chahat Kalsi</u>, Pranav Motarwar, Dania Annuar, Jacob Stimes, Sam Sterling, David Fenyo, Eva Hernando, Kelly Ruggles, Gregory J. Baker, Aristotelis Tsirigos, Robert Krueger
+  venue: "European Society for Spatial Biology (ESSB), 2026"
+  thumb: talks/ESSB_CellGalaxy/cell_galaxy.jpeg
+  links:
+    - label: Poster
+      url: assets/talks/ESSB_CellGalaxy/CellGalaxy_Poster.pdf
+
+- title: "Scalable 3D Visualization and Spatial Exploration of Multiplexed Cancer Tissue Images for the Web"
+  authors: >-
+    <u>Chahat Kalsi</u>, Hossein Fathollahian, Luca Reichmann, Yuancheng Shen, Sophia Gaupp, Angela Szabo, Alfredo Rodriguez, Tuulia Vallius, Meri Rogava, G. Elisabeta Marai, Michael Krone, Saeed Boorboor, Robert Krüger
+  venue: "European Society for Spatial Biology (ESSB), 2026"
+  thumb: talks/ESSB_BioSET/bioset.jpeg
+  links:
+    - label: Poster
+      url: assets/talks/ESSB_BioSET/ESSB2026_Poster_BioSET.pdf
+
+- title: "Scalable Web-based Visual Analytics for 3D Multiplexed Tissue Images"
+  authors: >-
+    <u>Chahat Kalsi</u>, Hossein Fathollahian, Luca Reichmann, Sophia Gaupp, Yuancheng Shen, G. Elisabeta Marai, Michael Krone, Saeed Boorboor, Robert Krüger
+  venue: "3D Day Seminar, ESSB, 2026"
+  thumb: talks/3D_Day/3D_Day.png
+  links:
+    - label: PDF
+      url: assets/talks/3D_Day/ESSB_3D_Day_Chahatkalsi.pdf      
+
 - title: "Guided Discovery in Multiplexed Volumetric Data"
   authors: >-
     <u>Chahat Kalsi</u>
