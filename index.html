@@ -87,6 +87,7 @@ title: Chahat Kalsi
         <img class="pub-thumb" src="{{ pub.thumb | prepend: '/assets/' | relative_url }}" alt="Paper thumbnail">
         <div class="pub-meta">
           <strong>{{ pub.title }}</strong>
+          {% if pub.badge %}<span class="badge">{{ pub.badge }}</span>{% endif %}
           <br><span class="pub-authors">{{ pub.authors }}</span>
           <br><em>{{ pub.venue }}</em>
           <div class="pub-links">
@@ -111,6 +112,7 @@ title: Chahat Kalsi
         <img class="pub-thumb" src="{{ pub.thumb | prepend: '/assets/' | relative_url }}" alt="Paper thumbnail">
         <div class="pub-meta">
           <strong>{{ pub.title }}</strong>
+          {% if pub.badge %}<span class="badge">{{ pub.badge }}</span>{% endif %}
           <br><span class="pub-authors">{{ pub.authors }}</span>
           <br><em>{{ pub.venue }}</em>
           <div class="pub-links">
@@ -135,6 +137,7 @@ title: Chahat Kalsi
         <img class="pub-thumb" src="{{ pub.thumb | prepend: '/assets/' | relative_url }}" alt="Paper thumbnail">
         <div class="pub-meta">
           <strong>{{ pub.title }}</strong>
+          {% if pub.badge %}<span class="badge">{{ pub.badge }}</span>{% endif %}
           <br><span class="pub-authors">{{ pub.authors }}</span>
           <br><em>{{ pub.venue }}</em>
           <div class="pub-links">
