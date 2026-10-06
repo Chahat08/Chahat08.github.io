@@ -1,12 +1,3 @@
-- title: "Human-in-the-loop Characterization of Tissue Microenvironments: From Intensity Averaging to Representation Learning"
-  authors: >-
-    Yuancheng Shen (Presenting Author), <u>Chahat Kalsi</u>, Pranav Motarwar, Dania Annuar, Jacob Stimes, Sam Sterling, David Fenyo, Eva Hernando, Kelly Ruggles, Gregory J. Baker, Aristotelis Tsirigos, Robert Krueger
-  venue: "European Society for Spatial Biology (ESSB), 2026"
-  thumb: talks/ESSB_CellGalaxy/cell_galaxy.jpeg
-  links:
-    - label: Poster
-      url: assets/talks/ESSB_CellGalaxy/CellGalaxy_Poster.pdf
-
 - title: "Scalable 3D Visualization and Spatial Exploration of Multiplexed Cancer Tissue Images for the Web"
   badge: Best Poster Award
   authors: >-
@@ -16,6 +7,15 @@
   links:
     - label: Poster
       url: assets/talks/ESSB_BioSET/ESSB2026_Poster_BioSET.pdf
+      
+- title: "Human-in-the-loop Characterization of Tissue Microenvironments: From Intensity Averaging to Representation Learning"
+  authors: >-
+    Yuancheng Shen (Presenting Author), <u>Chahat Kalsi</u>, Pranav Motarwar, Dania Annuar, Jacob Stimes, Sam Sterling, David Fenyo, Eva Hernando, Kelly Ruggles, Gregory J. Baker, Aristotelis Tsirigos, Robert Krueger
+  venue: "European Society for Spatial Biology (ESSB), 2026"
+  thumb: talks/ESSB_CellGalaxy/cell_galaxy.jpeg
+  links:
+    - label: Poster
+      url: assets/talks/ESSB_CellGalaxy/CellGalaxy_Poster.pdf
 
 - title: "BioSET: Biomarker-based Spatial co-Expression analysis in Tumor environments"
   authors: >-
