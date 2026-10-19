@@ -127,6 +127,45 @@ nav li + li::before {
   box-sizing: border-box;
 }
 
+/* ========== Resume Button ========== */
+
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  flex-shrink: 0;
+  background: var(--accent);
+  border: 3px solid var(--ink);
+  /* border-box so the 3px border counts inside the height below, keeping the
+     button exactly as tall as the two lines of the title block beside it */
+  box-sizing: border-box;
+  height: calc(var(--fs-body) * var(--lh-body) * 2);
+  padding: 0 .4rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background .15s ease, color .15s ease;
+}
+
+/* the global `a` rules win on specificity, so restate colour per state */
+.resume-btn,
+.resume-btn:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.resume-btn:hover {
+  background: var(--page-bg);
+  color: var(--accent);
+}
+
 /* ========== Education Inline ========== */
 
 .edu-inline {
