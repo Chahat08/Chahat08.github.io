@@ -7,6 +7,7 @@
   --link-visited: #0e4f72;
   --link-hover: #0064f0;
   --accent: #0064f0;
+  --accent-soft: #e6f1fb;
   --maxw: 48rem;
   --photo-col: 260px;
 
@@ -125,6 +126,29 @@ nav li + li::before {
   object-fit: cover;
   border: 3px solid var(--ink);
   box-sizing: border-box;
+}
+
+/* ========== Notice Banner ========== */
+
+.notice {
+  display: flex;
+  align-items: flex-start;
+  gap: .5rem;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  padding: .5rem .7rem;
+  margin: 0 0 1.25rem;
+  font-size: var(--fs-small);
+  line-height: var(--lh-tight);
+}
+
+.notice p {
+  margin: 0;
+}
+
+.notice-icon {
+  color: var(--accent);
+  margin-top: .15rem;
 }
 
 /* ========== Resume Button ========== */
@@ -624,7 +648,7 @@ ol.pubs li, ol.posters li {
 }
 
 .post-content .tag-reading {
-  background: #e6f1fb;
+  background: var(--accent-soft);
   color: var(--accent);
   border: 1px solid var(--accent);
 }

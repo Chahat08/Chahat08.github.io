@@ -1,3 +1,23 @@
+- title: "BioSET: Interactive Visual Analysis of Biomarker Co-localization in Large Multi-Volume Tissue Data"
+  authors: >-
+    <u>Chahat Kalsi</u>, Hossein Fathollahain, Luca Reichmann, Sophia Gaupp, Yuancheng Shen,
+    Aleksandra Shabanova, Ada Junquera,  Angéla Szabó,  Alfredo Rodríguez, Tuulia Vallius, Meri Rogava, G. Elisabeta Marai, Michael Krone, Saeed Boorboor, and Robert Krueger
+  venue: "Transactions on Visualization and Computer Graphics (TVCG), 2027 (Under Review)"
+  thumb: papers/bioset_tvcg/bioset.png
+  links:
+
+
+
+- title: "CellGalaxy: Multiscale Exploration of Biomedical Image Embeddings"
+  authors: >-
+    Yuancheng Shen, <u>Chahat Kalsi</u>, Pranav Motarwar, Dania Annuar,
+    Jacob Stimes, Sam Sterling, Shi Qiu, Irineu Illa-Bochaca, David Fenyo, Eva Hernando, Kelly Ruggles, Gregory J. Baker, Aristotelis Tsirigos, and Robert Krueger
+  venue: "Transactions on Visualization and Computer Graphics (TVCG), 2027 (Under Review)"
+  thumb: papers/cellgalaxy/cellgalaxy.png
+  links:
+
+
+
 - title: "BioSET: Biomarker-based Spatial co-Expression analysis in Tumor environments"
   badge: Award of Excellence
   authors: >-
