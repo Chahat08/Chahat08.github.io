@@ -28,7 +28,11 @@
 
 - file: art/room_still_life.jpeg
   alt: Room Still Life
-  caption: Still life from my room in Brooklyn.
+  caption: Still life from my room in Brooklyn
+
+- file: art/greenwood_fall.jpg
+  alt: Greenwood Cemetery in Fall
+  caption: Greenwood Cemetery in Fall, Brooklyn
 
 - file: art/dark_forest.jpg
   alt: Dark Forest
