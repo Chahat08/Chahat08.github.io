@@ -589,6 +589,39 @@ ol.pubs li, ol.posters li {
   margin: 1rem 0;
 }
 
+.post-figure {
+  margin: 1.25rem 0;
+}
+
+/* Photos fill the column width and are cropped to --photo-h; set it inline on a figure to resize. */
+.post-figure img {
+  display: block;
+  width: 100%;
+  height: var(--photo-h, 19rem);
+  object-fit: cover;
+  border-width: 1px;
+  margin: 0;
+}
+
+.post-figure figcaption {
+  font-style: italic;
+  font-size: var(--fs-small);
+  color: var(--muted);
+  text-align: center;
+  line-height: var(--lh-tight);
+  margin-top: .35rem;
+}
+
+.photo-row {
+  display: flex;
+  gap: .5rem;
+}
+
+.photo-row img {
+  flex: 1;
+  min-width: 0;
+}
+
 .post-content pre {
   background: #f5f2eb;
   border: 1px solid var(--rule);
@@ -747,6 +780,11 @@ footer {
   .gallery .graphic-thumb { width: 100%; aspect-ratio: 4 / 3; height: auto; object-fit: cover; }
   .gallery figcaption { text-align: center; margin-top: .3rem; }
   .blog-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .photo-row { flex-wrap: wrap; }
+  .photo-row img { flex-basis: calc(50% - .25rem); }
 }
 
 @media (max-width: 460px) {
