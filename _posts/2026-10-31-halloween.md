@@ -24,7 +24,7 @@ One such walk yesterday brought me back to the serene Greenwood Cemetery. Last y
   <figcaption>Fall foliage in the Greenwood Cemetery from my walk.</figcaption>
 </figure>
 
-After a walk through the winding ways of the cemetery, I chanced upon this lone bench by a crypt. Initially, I was skeptical of this location, as I wanted to find a spot to paint, and this particular bench didn't seem to provide any good vantage points to frame any subject in particular. But there sure was something magnetic about this bench, and almost as soon as I took the sat, the view in front of me suddenly seemed like the perfect landscape to commemorate in the pages of my sketchbook. Perched in my corner of the cemetery, I decided to render out in quick strokes the scene in front of me of the Greenwood slopes bathed in sunlight and adorned by a vignette of autumnal colors. (This is the painting.)
+After a walk through the winding ways of the cemetery, I chanced upon this lone bench by a crypt. Initially, I was skeptical of this location, as I wanted to find a spot to paint, and this particular bench didn't seem to provide any good vantage points to frame any subject in particular. But there sure was something magnetic about this bench, and almost as soon as I took the sat, the view in front of me suddenly seemed like the perfect landscape to commemorate in the pages of my sketchbook. Perched in my corner of the cemetery, I decided to render out in quick strokes the scene in front of me of the Greenwood slopes bathed in sunlight and adorned by a vignette of autumnal colors. ([This]({{ '/assets/art/greenwood_fall.jpg' | relative_url }}) is the painting.)
 
 <figure class="post-figure" style="--photo-h: 12.5rem">
   <div class="photo-row">
