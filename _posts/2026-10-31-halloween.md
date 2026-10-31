@@ -34,5 +34,5 @@ After a walk through the winding ways of the cemetery, I chanced upon this lone 
   <figcaption>Thank you, Ben. Hope your rest is peaceful.</figcaption>
 </figure>
 
-Have a Happy Halloween and a Spectacular Spooky Season!
+Have a Happy Halloween and a Spectacular Spooky Season!  
 👻🎃👻🎃👻🎃👻🎃👻🎃👻🎃👻🎃👻🎃👻🎃👻🎃👻🎃
