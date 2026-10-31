@@ -1,4 +1,4 @@
-{% assign filled = include.rating | default: 0 %}
+{% assign filled = include.rating | default: 0 | plus: 0 %}
 <span class="star-rating" aria-label="{{ filled }} out of 5 stars">
-{% for i in (1..5) %}{% if i <= filled %}<span class="star star-filled">&#9733;</span>{% else %}<span class="star star-empty">&#9733;</span>{% endif %}{% endfor %}
+{% for i in (1..5) %}{% assign half = i | minus: 0.5 %}{% if i <= filled %}<span class="star star-filled">&#9733;</span>{% elsif half <= filled %}<span class="star star-half">&#9733;</span>{% else %}<span class="star star-empty">&#9733;</span>{% endif %}{% endfor %}
 </span>

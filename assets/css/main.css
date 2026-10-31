@@ -647,7 +647,8 @@ ol.pubs li, ol.posters li {
   white-space: nowrap;
 }
 
-.post-content .tag-reading {
+.post-content .tag-reading,
+.post-content .tag-playing {
   background: var(--accent-soft);
   color: var(--accent);
   border: 1px solid var(--accent);
@@ -760,10 +761,16 @@ footer {
 .game-title { font-weight: 600; }
 .game-note { margin: 0.15rem 0 0; opacity: 0.8; font-size: 0.95em; }
 
-.star-rating { white-space: nowrap; }
-.star { font-size: 0.95em; }
+.star-rating { white-space: nowrap; line-height: 1; }
+.star { font-size: 1.25em; -webkit-text-stroke: 0.5px #000; }
 .star-filled { color: #e0a500; }
 .star-empty { color: #cfcfcf; }
+.star-half {
+  background: linear-gradient(90deg, #e0a500 50%, #cfcfcf 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
 @media print {
   a { color: inherit; text-decoration: none; }

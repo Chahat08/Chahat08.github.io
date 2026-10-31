@@ -3,6 +3,7 @@
   <div class="game-info">
     <div class="game-title-row">
       <span class="game-title">{{ include.title }}</span>
+      {% if include.status %}<code class="tag tag-{{ include.status }}">{{ include.status }}</code>{% endif %}
       {% if include.rating %}{% include stars.html rating=include.rating %}{% endif %}
     </div>
     {% if include.note %}<p class="game-note">{{ include.note }}</p>{% endif %}
