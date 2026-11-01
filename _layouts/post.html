@@ -9,12 +9,15 @@ layout: default
        alt="{{ page.teaser_alt | default: page.title }}">
   {% endif %}
   <h2>{{ page.title }}</h2>
-  <p class="muted post-date">{{ page.date | date: "%B %d, %Y" }}</p>
+  {% assign posted_day = page.date | date: "%Y%m%d" %}
+  {% assign updated_day = page.last_modified_at | date: "%Y%m%d" %}
+  <p class="muted post-date">{{ page.date | date: "%B %d, %Y" }}{% if page.last_modified_at and updated_day != posted_day %} · Updated {{ page.last_modified_at | date: "%B %d, %Y" }}{% endif %}</p>
   <hr>
   <div class="post-content">
     {{ content }}
   </div>
   <hr>
+  {% include comments.html %}
   <p class="muted"><a href="{{ '/blog/' | relative_url }}">Back to all posts</a></p>
 </article>
  

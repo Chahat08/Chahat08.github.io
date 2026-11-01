@@ -1,4 +1,7 @@
 ---
+redirect_from:
+  - /2026/10/30/video_games/
+  - /2026/07/04/video_games/
 title: Video Games
 teaser: blog/games/games.png
 teaser_alt: My handwritten initials.

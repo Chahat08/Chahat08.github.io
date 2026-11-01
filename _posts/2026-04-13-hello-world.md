@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2026/04/13/hello-world/
 title: Hello World
 teaser: blog/helloworld/icon.png
 teaser_alt: My handwritten initials.

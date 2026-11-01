@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2026/10/31/halloween/
 title: Happy Halloween 2026
 teaser: blog/halloween_26/greenwood_fall.jpg
 teaser_alt: Greenwood Cemetary Painting.

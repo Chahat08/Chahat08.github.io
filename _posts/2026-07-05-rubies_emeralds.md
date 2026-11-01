@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2026/07/05/rubies_emeralds/
 title: Rubies&Emeralds (Shadertoy)
 teaser: blog/rubies_emeralds/rubies_emeralds.png
 teaser_alt: Rubies&Emeralds shader

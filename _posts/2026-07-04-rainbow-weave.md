@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2026/07/04/rainbow-weave/
 title: Rainbow Weave (Shadertoy)
 teaser: graphics/rainbow_weave.png
 teaser_alt: Rainbow Weave shader

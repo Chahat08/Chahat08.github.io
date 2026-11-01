@@ -8,6 +8,17 @@ baseurl: ""
 markdown: kramdown
 permalink: pretty
 
+plugins:
+  - jekyll-redirect-from
+
+# Comments (_includes/comments.html), stored in this repo's GitHub Discussions.
+# IDs come from https://giscus.app. Add `comments: false` to a page to hide them.
+giscus:
+  repo: Chahat08/Chahat08.github.io
+  repo_id: "R_kgDOQTgBPg"
+  category: Comments
+  category_id: "DIC_kwDOQTgBPs4DKJ5p"
+
 collections:
   projects:
     output: true
@@ -19,6 +30,9 @@ defaults:
       type: "posts"
     values:
       layout: post
+      # URL comes from the filename's slug only, so re-dating a post never moves it
+      # (or orphans its comments). Dates come from git: see _plugins/git_dates.rb.
+      permalink: /blog/:title/
   - scope:
       path: ""
       type: "projects"
@@ -33,3 +47,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - giscus.json

@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /2026/07/14/ace-of-hearts/
 title: Aces of Hearts (Shadertoy)
 teaser: blog/ace_of_hearts/ace_of_hearts.png
 teaser_alt: Aces of Hearts shader
